@@ -22,7 +22,7 @@ export default function Filosofia() {
         <div className="absolute inset-0 bg-black/50 -z-10" />
       <div className="w-full h-full flex items-center justify-start">
         <div className="max-w-full w-full mx-auto px-8 md:px-24 flex items-center  justify-start">
-          <div className="w-full xl:w-3/5 flex flex-col gap-10 md:gap-10 2xl:gap-30 justify-between text-left">
+          <div className="w-full xl:w-3/5 flex flex-col gap-10 md:gap-10 2xl:gap-20 justify-between text-left">
             
               <h2 className="text-white mt-16 lg:mt-0 text-3xl md:text-7xl font-[font--philosopher] font-medium">
               Viviendas <br />de <br />Precio Limitado

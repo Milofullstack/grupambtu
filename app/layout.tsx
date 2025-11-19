@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Philosopher } from "next/font/google";
 import { EB_Garamond } from "next/font/google";
+import Navbar from "./components/Navbar";
 
 const garamond = EB_Garamond({
   variable : "--font-garamond",
@@ -41,6 +42,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${philosopher.variable} ${garamond.variable} antialiased`}
       >
+        <Navbar /> 
         {children}
       </body>
     </html>

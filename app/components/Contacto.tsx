@@ -5,7 +5,7 @@ export default function Contacto() {
   return (
     <section id="contacto" className="w-full bg-white pt-20 pb-10">
       <div className="max-w-8xl mx-auto px-8 md:px-16 lg:px-32 flex flex-col gap-16 justify-between items-center">
-        <h2 className="text-3xl md:text-4xl font-[font--philosopher] mb-6">
+        <h2 className="text-black text-3xl md:text-4xl font-[font--philosopher] mb-6">
           ¿Quieres conocernos mejor?
         </h2>
         <p className="text-lg md:text-xl text-gray-600 mb-10 font-thin font-[font--philosopher]">
@@ -37,7 +37,7 @@ export default function Contacto() {
         {/* Botón de llamada a la acción */}
         <div className="mt-10 flex justify-start">
           <Link href="/contacto">
-            <button className="group relative isolate overflow-hidden inline-flex items-center rounded-2xl border border-black px-8 py-3 font-[font--philosopher] text-lg transition-transform duration-300 hover:scale-105 active:scale-95"> 
+            <button className="group text-black relative isolate overflow-hidden inline-flex items-center rounded-2xl border border-black px-8 py-3 font-[font--philosopher] text-lg transition-transform duration-300 hover:scale-105 active:scale-95"> 
               <span className="relative z-10 transition-colors duration-200 group-hover:text-white">
                 Ir a página de contacto
               </span>

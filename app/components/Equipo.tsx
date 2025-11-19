@@ -11,7 +11,7 @@ export default function Equipo() {
       <div className="mx-auto xl:pl-16 flex flex-col xl:flex-row-reverse items-center justify-center gap-10 h-full">
         
         {/* Imagen */}
-        <div className="relative w-full xl:w-3/5 h-[60vh] md:h-[50vh] lg:h-[60vh] aspect-video">
+        <div className="relative w-full xl:w-3/5 h-[60vh] md:h-[50vh] lg:h-[60vh] aspect-video shadow-2xl">
           <Image
             src={imageUrl}
             alt="Descripción de la imagen"
