@@ -24,17 +24,17 @@ export default function Equipo() {
         </div>
 
         {/* Texto */}
-        <div className="w-full h-full px-8 xl:px-0 xl:w-2/5 flex flex-col gap-20 justify-center text-left">
+        <div className="lg:max-w-5xl w-full h-full px-8 xl:px-0 xl:w-2/5 flex flex-col gap-20 justify-center sm:text-center md:text-left">
 
 
           <EdgeReveal>
-            <h2 className="text-black text-3xl md:text-5xl font-[font--philosopher] font-medium">
+            <h2 className="sm:pt-14  text-black text-3xl md:text-5xl font-[font--philosopher] font-extralight">
              Nuestro equipo
             </h2>
           </EdgeReveal>
 
           <EdgeReveal>
-            <p className="text-xl md:text-2xl text-gray-500 font-[font--garamond] font-medium leading-relaxed">
+            <p className="text-xl md:text-2xl text-gray-500 font-[font--garamond] font-light leading-relaxed">
               Contamos con un equipo de profesionales creativos que evalúa cada proyecto con cuidado para ajustarse a las limitaciones financieras y de tiempo, aportando experiencia en desarrollos de pequeña y gran escala desde 2000.
             </p>
           </EdgeReveal>

@@ -22,20 +22,20 @@ export default function Hero() {
 
       {/* 🧱 Contenido principal */}
       <div className="w-full h-full flex items-center justify-start">
-        <div className="max-w-5xl w-full mx-auto px-8 flex justify-between">
+        <div className="md:max-w-5xl w-full mx-auto px-8 flex justify-between">
           <div className="w-full flex flex-col gap-10 md:gap-20 justify-between text-center">
             <h1 className="text-white text-3xl md:text-5xl font-[--font-philosopher] text-shadow-md text-pretty animate-fade-in-up">
               GrupAmbtu no es solo una promotora inmobiliaria - es un
               compromiso.
             </h1>
 
-            <h2 className="mt-4 px-20 text-xl md:text-2xl lg:text-3xl text-gray-100 text-shadow-lg font-normal text-pretty font-[--font-garamond] leading-relaxed animate-fade-in-up">
+            <h2 className="mt-4 px-8 md:px-20 text-xl md:text-2xl lg:text-3xl text-gray-100 text-shadow-lg font-normal text-pretty font-[--font-garamond] leading-relaxed animate-fade-in-up">
               Nacidos en Mallorca con la convicción de que vivir bien no puede
               ser un privilegio, trabajamos para convertir ideas en hogares con
               alma.
             </h2>
 
-            <div className=" flex justify-center">
+            <div className="w-full flex justify-center items-center">
               <button
                 className="bg-none text-white text-shadow-md
                   group relative isolate overflow-hidden

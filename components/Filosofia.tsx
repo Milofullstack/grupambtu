@@ -23,16 +23,16 @@ export default function Filosofia() {
         </div>
 
         {/* Texto */}
-        <div className="md:max-w-2xl lg:max-w-5xl h-full px-8 xl:px-0 xl:w-2/5 flex flex-col gap-20 justify-center text-left">
+        <div className=" lg:max-w-5xl w-full h-full px-8 xl:px-0 xl:w-2/5 flex flex-col gap-20 justify-center sm:text-center md:text-left">
           <EdgeReveal>
-            <h2 className="text-black text-3xl md:text-5xl font-[font--philosopher] text-left font-extralight">
+            <h2 className="sm:pt-14  text-black text-3xl md:text-5xl font-[font--philosopher] font-extralight">
               Una vision diferente
             </h2>
             </EdgeReveal>
           
 
           <EdgeReveal>
-            <p className="text-xl md:text-2xl text-gray-500 font-[font--garabond] font-light leading-relaxed animate-fade-in-up">
+            <p className="text-xl md:text-2xl text-gray-500 font-[font--garamond] font-light leading-relaxed">
                 Nuestra filosofía nace del deseo de construir con sentido,
                 cuidar el entorno y crear hogares donde las personas vivan con
                 dignidad.
@@ -40,7 +40,7 @@ export default function Filosofia() {
           </EdgeReveal>
 
           <EdgeReveal>
-           <div className="sm:flex sm:justify-center">
+           <div className="w-full flex sm:justify-center sm:items-center">
              <Link href="/about">
               <button
                 className="group relative isolate overflow-hidden

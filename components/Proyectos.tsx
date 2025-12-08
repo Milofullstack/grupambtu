@@ -22,8 +22,8 @@ export default function Filosofia() {
         </div>
         <div className="absolute inset-0 bg-black/50 -z-10" />
       <div className="w-full h-full flex items-center justify-start">
-        <div className="max-w-5xl w-full mx-auto px-8 md:px-24 flex items-center  justify-start">
-          <div className="w-full flex flex-col gap-10 md:gap-10 2xl:gap-20 justify-between text-center">
+        <div className="max-w-5xl w-full mx-auto px-8 md:px-24 flex items-center justify-start">
+          <div className="w-full flex flex-col gap-8 md:gap-10 2xl:gap-20 justify-between text-center">
             <EdgeReveal>
               <h2 className="text-white mt-16 lg:mt-0 text-3xl md:text-7xl font-[font--philosopher] font-medium text-shadow-lg">
               Viviendas de Precio Limitado
@@ -31,7 +31,7 @@ export default function Filosofia() {
             </EdgeReveal>
             
             <EdgeReveal>
-              <p className="mt-4 text-xl md:text-2xl lg:text-3xl  text-gray-200 font-medium font-[font--garamond] text-shadow-2xl leading-relaxed">
+              <p className="mt-4 text-lg md:text-2xl lg:text-3xl  text-gray-200 font-medium font-[font--garamond] text-shadow-2xl leading-relaxed">
               En GrupAmbtu impulsamos proyectos que combinan viabilidad,
               innovación y compromiso social. Fuimos pioneros en la primera
               promoción de Viviendas de Protección Limitada en Mallorca, un
@@ -54,7 +54,7 @@ export default function Filosofia() {
             hover:scale-105 active:scale-95
             "
                 >
-                  <span className="relative z-10 md:text-xl transition-colors duration-500 font-[font--philosopher] group-hover:text-black">
+                  <span className="relative z-10 lg:text-2xl transition-colors duration-500 font-[font--philosopher] group-hover:text-black">
                     Conoce nuestros proyectos
                   </span>
 
