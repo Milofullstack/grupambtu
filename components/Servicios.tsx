@@ -55,7 +55,7 @@ export default function Servicios() {
             
               <div key={index} className="
                     group flex items-center justify-start gap-6
-                    bg-black/40 backdrop-blur-sm
+                    bg-black/40 backdrop-blur-sm rounded-2xl
                     border border-white/40
                     p-8 md:p-10 text-left
                     h-full

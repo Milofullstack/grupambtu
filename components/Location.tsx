@@ -7,12 +7,12 @@ export default function Location() {
   <div className="max-w-8xl mx-auto px-8 md:px-16 lg:px-32 flex flex-col gap-16 justify-between">
     <div className="flex flex-col gap-8 text-center">
         <EdgeReveal>
-            <h2 className="text-3xl md:text-4xl font-philosopher font-medium text-pretty">
+            <h2 className="text-3xl md:text-5xl font-[font--philosopher] font-medium text-pretty">
         Descubra nuestros proyectos en persona
       </h2>
         </EdgeReveal>
         <EdgeReveal>
-            <p className="mt-4 text-xl text-gray-600 font-philosopher font-thin">
+            <p className="mt-4 text-xl md:text-2xl text-black font-[font--philosopher] font-light">
         Nuestras viviendas no se comprenden del todo hasta que se sienten de cerca.<br />
         Le invitamos a visitarnos en nuestra oficina para conocer cómo concebimos el hogar en Mallorca.
       </p>

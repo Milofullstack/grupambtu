@@ -18,18 +18,20 @@ export default function Hero() {
       </div>
 
       {/* 🩶 Capa de oscurecimiento */}
-      <div className="absolute inset-0 bg-black/50 -z-10" />
+      <div className="absolute inset-0 bg-black/40 -z-10" />
 
       {/* 🧱 Contenido principal */}
       <div className="w-full h-full flex items-center justify-start">
         <div className="md:max-w-5xl w-full mx-auto px-8 flex justify-between">
-          <div className="w-full flex flex-col gap-10 md:gap-20 justify-between text-center">
-            <h1 className="text-white text-3xl md:text-5xl font-[--font-philosopher] text-shadow-md text-pretty animate-fade-in-up">
-              GrupAmbtu no es solo una promotora inmobiliaria - es un
-              compromiso.
+          <div className="bg-black/20 px-2 py-10 rounded-4xl">
+          <div className="w-full   flex flex-col gap-10 md:gap-20 justify-between text-center md:pt-20">
+            <h1 className="text-[#f5f5f5] text-3xl md:text-5xl font-[--font-philosopher] text-shadow-lg text-pretty font-medium">
+              GrupAmbtu no es solo una promotora inmobiliaria - <span className="font-bold text-3xl md:text-5xl"> es un
+              compromiso.</span>
             </h1>
+            
 
-            <h2 className="mt-4 px-8 md:px-20 text-xl md:text-2xl lg:text-3xl text-gray-100 text-shadow-lg font-normal text-pretty font-[--font-garamond] leading-relaxed animate-fade-in-up">
+            <h2 className="mt-4 px-8 md:px-20 text-xl md:text-2xl lg:text-3xl text-[#f5f5f5] font-semibold text-shadow-lg text-pretty font-[--font-garamond] leading-relaxed">
               Nacidos en Mallorca con la convicción de que vivir bien no puede
               ser un privilegio, trabajamos para convertir ideas en hogares con
               alma.
@@ -43,7 +45,7 @@ export default function Hero() {
                   rounded-2xl border border-white px-6 py-2 lg:px-10 lg:py-4
                   font-[--font-philosopher] text-xl
                   transition-transform duration-300
-                  hover:scale-105 active:scale-95 animate-fade-in-up"
+                  hover:scale-105 active:scale-95"
               >
                 <span className="relative lg:text-2xl z-10 transition-colors duration-500 group-hover:text-black">
                   Contáctanos
@@ -58,7 +60,8 @@ export default function Hero() {
                 />
               </button>
             </div>
-          </div>
+          </div></div>
+          
         </div>
       </div>
     </section>

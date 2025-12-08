@@ -5,10 +5,10 @@ export default function Contacto() {
   return (
     <section id="contacto" className="w-full bg-white pt-20 pb-10">
       <div className="max-w-8xl mx-auto px-8 md:px-16 lg:px-32 flex flex-col gap-16 justify-between items-center">
-        <h2 className="text-black text-3xl md:text-4xl font-[font--philosopher] mb-6">
+        <h2 className="text-black text-3xl md:text-5xl font-[font--philosopher] mb-6">
           ¿Quieres conocernos mejor?
         </h2>
-        <p className="text-lg md:text-xl text-gray-600 mb-10 font-thin font-[font--philosopher]">
+        <p className="text-lg md:text-2xl text-gray-600 mb-10 font-thin font-[font--philosopher]">
           Nuestro equipo te espera en la oficina para resolver tus dudas,
           compartir proyectos o simplemente charlar sobre cómo entendemos la
           vivienda.

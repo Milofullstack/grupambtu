@@ -25,7 +25,7 @@ export default function Filosofia() {
         {/* Texto */}
         <div className=" lg:max-w-5xl w-full h-full px-8 xl:px-0 xl:w-2/5 flex flex-col gap-20 justify-center sm:text-center md:text-left">
           <EdgeReveal>
-            <h2 className="sm:pt-14  text-black text-3xl md:text-5xl font-[font--philosopher] font-extralight">
+            <h2 className="sm:pt-14 text-center md:text-left text-black text-3xl md:text-5xl font-[font--philosopher] font-extralight">
               Una vision diferente
             </h2>
             </EdgeReveal>
@@ -40,7 +40,7 @@ export default function Filosofia() {
           </EdgeReveal>
 
           <EdgeReveal>
-           <div className="w-full flex sm:justify-center sm:items-center">
+           <div className="w-full flex justify-center items-center">
              <Link href="/about">
               <button
                 className="group relative isolate overflow-hidden
