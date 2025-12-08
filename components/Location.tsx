@@ -1,5 +1,4 @@
 import EdgeReveal from "@/components/EdgeReveal";
-import Link from "next/link";
 
 export default function Location() {
   return (

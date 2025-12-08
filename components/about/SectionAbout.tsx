@@ -19,7 +19,7 @@ export default function SectionAbout({
   const isRight = align === "right";
 
   return (
-    <section className="relative w-full min-h-svh flex items-center py-20">
+    <section className="relative w-full h-svh flex items-center py-20">
       <div className="absolute inset-0 -z-10">
         <Image src={imageUrl} alt={title} fill className="object-cover object-top" />
       </div>
@@ -29,7 +29,7 @@ export default function SectionAbout({
           isRight ? "items-end" : "items-start"
         }`}
       >
-        <div className="w-full lg:w-1/2">
+        <div className="w-full xl:w-2/3">
         {children}
         </div>
       </div>

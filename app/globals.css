@@ -60,3 +60,26 @@ body {
 .animate-rotate-up {
   animation: rotateUp 2.5s ease-in-out;
 }
+body {
+  font-family: var(--font-inter), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Mapear fuentes alternativas para uso puntual */
+
+/* Titulares editoriales */
+.font-garamond {
+  font-family: var(--font-garamond), serif;
+}
+
+/* Acentos estilísticos (Philosopher) */
+.font-philosopher {
+  font-family: var(--font-philosopher), sans-serif;
+}
+
+/* Para asegurar que todas las fuentes se rendericen suavemente */
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}

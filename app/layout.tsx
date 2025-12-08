@@ -3,12 +3,19 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Philosopher } from "next/font/google";
 import { EB_Garamond } from "next/font/google";
+import { Inter } from "next/font/google";
 import Navbar from "../components/Navbar";
 
 const garamond = EB_Garamond({
   variable : "--font-garamond",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"]
+})
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+   weight: ["300", "400", "500", "600", "700"],
+   display: "swap",
 })
 
 const philosopher = Philosopher({
@@ -40,7 +47,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${philosopher.variable} ${garamond.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${philosopher.variable} ${garamond.variable} ${inter.variable} antialiased`}
       >
         <Navbar /> 
         {children}

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Hero from "../components/Hero";
 import Filosofia from "../components/Filosofia";
 import Proyectos from "../components/Proyectos";
@@ -16,8 +15,8 @@ export default function Home() {
    <Proyectos />
    <Equipo />
    <Servicios />
-   <Contacto />
    <Location/>
+   <Contacto />
    <Footer/>
    </>
   );
