@@ -22,7 +22,7 @@ export default function Servicios() {
       desc: "Compra, venta y alquiler con las comisiones más competitivas del mercado.",
     },
     {
-      icon: <Scale className="w-12 h-12 text-whitefont-philosopher" />,
+      icon: <Scale className="w-12 h-12 text-white font-philosopher" />,
       title: "Asesoramiento Legal y Urbanístico",
       desc: "Te ayudamos a regularizar y legalizar tu propiedad con nuestro equipo técnico.",
     },
@@ -45,7 +45,7 @@ export default function Servicios() {
       
       <div className="max-w-8xl mx-auto px-8 md:px-16 lg:px-32 text-center lg:h-full lg:flex lg:flex-col lg:justify-center">
         
-          <h2 className="text-3xl md:text-4xl lg:text-6xl font-[font--philosopher] text-white font-medium mb-20">
+          <h2 className="text-3xl md:text-4xl lg:text-6xl font-philosopher text-white font-medium mb-20">
             Nuestros Servicios
           </h2>
         
@@ -71,7 +71,7 @@ export default function Servicios() {
                   <h3 className="text-lg md:text-xl font-philosopher font-medium text-white">
                     {servicio.title}
                   </h3>
-                  <p className="mt-3 text-lg md:text-xl text-white font-light">
+                  <p className="mt-3 text-lg md:text-xl text-white font-philosopher font-light">
                     {servicio.desc}
                   </p>
                 </div>
