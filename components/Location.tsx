@@ -7,7 +7,7 @@ export default function Location() {
   <div className="max-w-8xl mx-auto px-8 md:px-16 lg:px-32 flex flex-col gap-16 justify-between">
     <div className="flex flex-col gap-8 text-center">
         <EdgeReveal>
-            <h2 className="text-3xl md:text-5xl font-[font--philosopher] font-medium text-pretty">
+            <h2 className=" text-black text-3xl md:text-5xl font-[font--philosopher] font-medium text-pretty">
         Descubra nuestros proyectos en persona
       </h2>
         </EdgeReveal>

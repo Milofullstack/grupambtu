@@ -34,7 +34,7 @@ export default function Equipo() {
           </EdgeReveal>
 
           <EdgeReveal>
-            <p className="text-xl md:text-2xl text-left text-gray-500 font-[font--garamond] font-light leading-relaxed">
+            <p className="text-xl md:text-2xl text-center md:text-left text-gray-500 font-[font--garamond] font-light leading-relaxed">
               Contamos con un equipo de profesionales creativos que evalúa cada proyecto con cuidado para ajustarse a las limitaciones financieras y de tiempo, aportando experiencia en desarrollos de pequeña y gran escala desde 2000.
             </p>
           </EdgeReveal>

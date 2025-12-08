@@ -32,7 +32,7 @@ export default function Filosofia() {
           
 
           <EdgeReveal>
-            <p className="text-xl md:text-2xl text-gray-500 font-[font--garamond] font-light leading-relaxed">
+            <p className="text-center md:text-left text-xl md:text-2xl text-gray-500 font-[font--garamond] font-light leading-relaxed">
                 Nuestra filosofía nace del deseo de construir con sentido,
                 cuidar el entorno y crear hogares donde las personas vivan con
                 dignidad.
