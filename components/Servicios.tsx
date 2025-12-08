@@ -28,7 +28,7 @@ export default function Servicios() {
   return (
     <section id="servicios" className="w-full h-full lg:h-screen py-10 bg-gray-100 overflow-hidden">
       
-      <div className="max-w-8xl mx-auto px-8 md:px-16 lg:px-32 text-center  pt-20 lg:h-full lg:flex lg:flex-col lg:justify-center">
+      <div className="max-w-8xl mx-auto px-8 md:px-16 lg:px-32 text-center lg:h-full lg:flex lg:flex-col lg:justify-center">
         
           <h2 className="text-3xl md:text-4xl font-[font--philosopher] font-medium mb-10">
             Nuestros Servicios
@@ -46,7 +46,7 @@ export default function Servicios() {
                 "
               >
                 {/* Icono a la izquierda */}
-                <div className="flex-shrink-0 text-gray-700 group-hover:text-black transition-colors duration-500">
+                <div className="shrink-0 text-gray-700 group-hover:text-black transition-colors duration-500">
                   {servicio.icon}
                 </div>
 

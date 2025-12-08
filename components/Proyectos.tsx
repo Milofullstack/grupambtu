@@ -1,13 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import { cloudImage } from "../lib/cloudinary";
+import EdgeReveal from "./EdgeReveal";
 
 export default function Filosofia() {
     const imageUrl = cloudImage("Grup_Ambtú_dj0dri")
   return (
 <section
-      id="historia"
-      className="relative w-full h-svh bg-center bg-cover bg-no-repeat"
+      id="proyectos"
+      className="relative w-full h-svh"
     >
         <div className="absolute inset-0 -z-10">        
         <Image
@@ -21,23 +22,25 @@ export default function Filosofia() {
         </div>
         <div className="absolute inset-0 bg-black/50 -z-10" />
       <div className="w-full h-full flex items-center justify-start">
-        <div className="max-w-full w-full mx-auto px-8 md:px-24 flex items-center  justify-start">
-          <div className="w-full xl:w-3/5 flex flex-col gap-10 md:gap-10 2xl:gap-20 justify-between text-left">
-            
-              <h2 className="text-white mt-16 lg:mt-0 text-3xl md:text-7xl font-[font--philosopher] font-medium">
-              Viviendas <br />de <br />Precio Limitado
+        <div className="max-w-5xl w-full mx-auto px-8 md:px-24 flex items-center  justify-start">
+          <div className="w-full flex flex-col gap-10 md:gap-10 2xl:gap-20 justify-between text-center">
+            <EdgeReveal>
+              <h2 className="text-white mt-16 lg:mt-0 text-3xl md:text-7xl font-[font--philosopher] font-medium text-shadow-lg">
+              Viviendas de Precio Limitado
               </h2>
+            </EdgeReveal>
             
-            
-              <p className="mt-4 text-xl md:text-2xl lg:text-3xl  text-gray-200 font-medium font-[font--garamond] text-shadow-lg leading-relaxed">
+            <EdgeReveal>
+              <p className="mt-4 text-xl md:text-2xl lg:text-3xl  text-gray-200 font-medium font-[font--garamond] text-shadow-2xl leading-relaxed">
               En GrupAmbtu impulsamos proyectos que combinan viabilidad,
               innovación y compromiso social. Fuimos pioneros en la primera
               promoción de Viviendas de Protección Limitada en Mallorca, un
               modelo que redefine el acceso a la vivienda con criterios de
               sostenibilidad, eficiencia y valor real para las personas.
               </p>
-            
+            </EdgeReveal>
            
+           <EdgeReveal>
               <div
               className="flex justify-center">
                 <Link href="/empresa">
@@ -51,7 +54,7 @@ export default function Filosofia() {
             hover:scale-105 active:scale-95
             "
                 >
-                  <span className="relative z-10 md:text-2xl transition-colors duration-500 group-hover:text-black">
+                  <span className="relative z-10 md:text-xl transition-colors duration-500 font-[font--philosopher] group-hover:text-black">
                     Conoce nuestros proyectos
                   </span>
 
@@ -69,7 +72,7 @@ export default function Filosofia() {
                 </button>
               </Link>
               </div>
-            
+            </EdgeReveal>
           </div>
         </div>
         </div>

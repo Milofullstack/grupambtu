@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Philosopher } from "next/font/google";
 import { EB_Garamond } from "next/font/google";
-import Navbar from "./components/Navbar";
+import Navbar from "../components/Navbar";
 
 const garamond = EB_Garamond({
   variable : "--font-garamond",

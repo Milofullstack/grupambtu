@@ -5,7 +5,7 @@
 export default function Hero() {
   // const videoUrl = cloudVideo("")
   return (
-    <section id="hero" className="relative w-full h-screen overflow-hidden">
+    <section id="hero" className="relative w-full h-svh overflow-hidden pt-26 lg:pt-28 xl:pt-36">
       {/* 🎥 Video de fondo */}
       <div className="absolute inset-0 -z-10">
         <iframe
@@ -22,14 +22,14 @@ export default function Hero() {
 
       {/* 🧱 Contenido principal */}
       <div className="w-full h-full flex items-center justify-start">
-        <div className="max-w-full w-full mx-auto px-8 md:px-24 flex justify-between">
-          <div className="w-full xl:w-3/5 flex flex-col gap-10 md:gap-20 justify-between text-left">
-            <h1 className="text-white text-3xl md:text-5xl font-[--font-philosopher] animate-fade-in-up">
-              GrupAmbtu no es solo una promotora inmobiliaria — es un
+        <div className="max-w-5xl w-full mx-auto px-8 flex justify-between">
+          <div className="w-full flex flex-col gap-10 md:gap-20 justify-between text-center">
+            <h1 className="text-white text-3xl md:text-5xl font-[--font-philosopher] text-shadow-md text-pretty animate-fade-in-up">
+              GrupAmbtu no es solo una promotora inmobiliaria - es un
               compromiso.
             </h1>
 
-            <h2 className="mt-4 text-xl md:text-2xl lg:text-3xl text-gray-200 font-medium font-[--font-garamond]leading-relaxed animate-fade-in-up">
+            <h2 className="mt-4 px-20 text-xl md:text-2xl lg:text-3xl text-gray-100 text-shadow-lg font-normal text-pretty font-[--font-garamond] leading-relaxed animate-fade-in-up">
               Nacidos en Mallorca con la convicción de que vivir bien no puede
               ser un privilegio, trabajamos para convertir ideas en hogares con
               alma.

@@ -2,6 +2,7 @@ import Link from "next/link";
 // import EdgeReveal from "./EdgeReveal";
 import Image from "next/image";
 import { cloudImage } from "../lib/cloudinary";
+import EdgeReveal from "./EdgeReveal";
 
 export default function Equipo() {
   const imageUrl = cloudImage("grup2_zh00rk")
@@ -11,7 +12,7 @@ export default function Equipo() {
       <div className="mx-auto xl:pl-16 flex flex-col xl:flex-row-reverse items-center justify-center gap-10 h-full">
         
         {/* Imagen */}
-        <div className="relative w-full xl:w-3/5 h-[60vh] md:h-[50vh] lg:h-[60vh] aspect-video shadow-2xl">
+        <div className="relative w-full xl:w-3/5 h-[60vh] md:h-[65vh] lg:h-[70vh]  xl:h-[65vh] aspect-video shadow-2xl">
           <Image
             src={imageUrl}
             alt="Descripción de la imagen"
@@ -19,24 +20,26 @@ export default function Equipo() {
             className="object-cover object-center"
             priority
           />
-          <div className="absolute inset-0 bg-black/40"></div>
+          <div className="absolute inset-0 bg-black/20"></div>
         </div>
 
         {/* Texto */}
         <div className="w-full h-full px-8 xl:px-0 xl:w-2/5 flex flex-col gap-20 justify-center text-left">
-          
+
+
+          <EdgeReveal>
             <h2 className="text-black text-3xl md:text-5xl font-[font--philosopher] font-medium">
              Nuestro equipo
             </h2>
-          
+          </EdgeReveal>
 
-          
-            <p className="text-xl md:text-3xl text-gray-500 font-[font--garamond] font-medium leading-relaxed">
+          <EdgeReveal>
+            <p className="text-xl md:text-2xl text-gray-500 font-[font--garamond] font-medium leading-relaxed">
               Contamos con un equipo de profesionales creativos que evalúa cada proyecto con cuidado para ajustarse a las limitaciones financieras y de tiempo, aportando experiencia en desarrollos de pequeña y gran escala desde 2000.
             </p>
-          
+          </EdgeReveal>
 
-       
+          <EdgeReveal>
             <div className="flex justify-center">
 <Link href="/equipo">
               <button
@@ -61,7 +64,7 @@ export default function Equipo() {
               </button>
             </Link>
             </div>
-          
+          </EdgeReveal>
         </div>
       </div>
       </div>
