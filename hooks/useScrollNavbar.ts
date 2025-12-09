@@ -12,9 +12,9 @@ export function useScrollNavbar() {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
-      // ─────────────
-      // 1) SI ESTÁ ARRIBA → SIEMPRE visible
-      // ─────────────
+      // ──────────────────────────────
+      // 1) SI ESTÁ ARRIBA → SIEMPRE VISIBLE
+      // ──────────────────────────────
       if (currentScrollY < 60) {
         setShowNavbar(true);
         setIsAtTop(true);
@@ -22,22 +22,22 @@ export function useScrollNavbar() {
         setIsAtTop(false);
       }
 
-      // ─────────────
-      // 2) Detectamos dirección real
-      // ─────────────
+      // ──────────────────────────────
+      // 2) DETECTAR DIRECCIÓN REAL
+      // ──────────────────────────────
       const isScrollingDown = currentScrollY > lastScrollY.current;
       const isScrollingUp = currentScrollY < lastScrollY.current;
 
-      // ─────────────
-      // 3) Ocultar (solo si realmente baja)
-      // ─────────────
+      // ──────────────────────────────
+      // 3) OCULTAR SI REALMENTE BAJA
+      // ──────────────────────────────
       if (isScrollingDown && currentScrollY > 20) {
         setShowNavbar(false);
       }
 
-      // ─────────────
-      // 4) Mostrar al subir (evitando micro-scroll con delta > 6px)
-      // ─────────────
+      // ──────────────────────────────
+      // 4) MOSTRAR SI SUBE — con delta > 6px
+      // ──────────────────────────────
       if (isScrollingUp && lastScrollY.current - currentScrollY > 6) {
         setShowNavbar(true);
       }

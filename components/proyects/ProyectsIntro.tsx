@@ -30,14 +30,14 @@ export default function ProjectsIntro() {
               <div className="absolute inset-0 bg-black/50 -z-10" />
         
         {/* TITLE */}
-        <h2 className="font-[font--philosopher] text-4xl md:text-6xl font-semibold text-shadow-lg leading-tight text-white">
+        <h2 className="font-philosopher text-4xl md:text-5xl font-semibold  leading-relaxed text-white">
           Proyectos que transforman la vida de quienes viven aquí.
         </h2>
 
         {/* ROTATING TEXT */}
-        <div className="text-2xl md:text-4xl font-[font--cormorant] text-white flex">
+        <div className=" text-xl md:text-2xl lg:text-5xl font-philosopher  text-white flex w-full">
           <span>Proyectos con&nbsp;</span>
-          <span className="relative h-10 md:h-12 font-bold text-shadow-lg overflow-hidden inline-block">
+          <span className="text-xl md:text-2xl lg:text-5xl h-10 text-white md:h-15 font-bold  overflow-hidden inline-block">
             <span
               key={index}
               className="block animate-rotate-up"
@@ -48,8 +48,8 @@ export default function ProjectsIntro() {
         </div>
 
         {/* SUBTEXT */}
-        <p className="text-lg md:text-2xl  text-white/70 text-shadow-lg leading-relaxed">
-          Nuestro trabajo no empieza en los edificios. Empieza en las personas que necesitan un hogar.
+        <p className="text-xl md:text-3xl font-garamond  text-white/70  leading-relaxed">
+          Nuestro trabajo no empieza en los edificios. <br />Empieza en las personas que necesitan un hogar.
         </p>
 
       </div>

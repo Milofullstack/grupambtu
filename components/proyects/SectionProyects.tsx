@@ -1,8 +1,9 @@
 "use client";
+
 import Image from "next/image";
 import { cloudImage } from "@/lib/cloudinary";
 
-interface props {
+interface Props {
   title: string;
   imageId: string;
   align?: "left" | "right";
@@ -14,24 +15,42 @@ export default function Proyects({
   imageId,
   align = "right",
   children,
-}: props) {
+}: Props) {
   const imageUrl = cloudImage(imageId);
   const isRight = align === "right";
 
   return (
-    <section className="relative w-full min-h-svh flex items-center py-20">
-      <div className="absolute inset-0 -z-10">
-        <Image src={imageUrl} alt={title} fill className="object-cover object-top" />
-      </div>
-      <div className="absolute inset-0 bg-black/60 -z-10" />
+    <section className="w-full min-h-svh flex flex-col lg:flex-row border-b border-gray-900">
+      
+      {/* TEXTO */}
       <div
-        className={`max-w-8xl w-full mx-auto px-8 md:px-24 flex flex-col justify-center ${
-          isRight ? "items-end" : "items-start"
-        }`}
+        className={`
+          flex items-center justify-center 
+          w-full lg:w-1/2 
+          px-8 md:px-16
+          ${isRight ? "order-1 lg:order-none" : "order-1 lg:order-2"}
+        `}
       >
-        <div className="w-full lg:w-1/2 flex flex-col gap-10">
-        {children}
+        <div className="max-w-xl flex flex-col gap-10">
+          {children}
         </div>
+      </div>
+
+      {/* IMAGEN (pantalla partida real) */}
+      <div
+        className={`
+          relative 
+          w-full lg:w-1/2 
+          h-[50vh] lg:h-svh
+          ${isRight ? "order-2 lg:order-0" : "order-2 lg:order-1"}
+        `}
+      >
+        <Image
+          src={imageUrl}
+          alt={title}
+          fill
+          className="object-cover object-center"
+        />
       </div>
     </section>
   );

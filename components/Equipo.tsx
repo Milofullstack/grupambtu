@@ -7,12 +7,12 @@ import EdgeReveal from "./EdgeReveal";
 export default function Equipo() {
   const imageUrl = cloudImage("grup2_zh00rk")
   return (
-    <section id="proyectos" className="w-full h-full xl:h-screen bg-gray-200 py-32">
-      <div className="w-full h-full">
-      <div className="mx-auto p-8 xl:p-16 flex flex-col xl:flex-row-reverse items-center justify-center gap-10 h-full">
+    <section id="equipo" className="w-full h-full xl:h-screen bg-gray-200 py-20 md:py-32">
+      <div className="w-full h-fit">
+      <div className="mx-auto px-8 xl:px-16 flex flex-col xl:flex-row-reverse items-center justify-center gap-10 h-full">
         
         {/* Imagen */}
-        <div className="relative w-full xl:w-3/5 h-[60vh] md:h-[65vh] lg:h-[70vh]  xl:h-[65vh] aspect-video ">
+        <div className="relative w-full xl:w-3/5  aspect-video ">
           <Image
             src={imageUrl}
             alt="Descripción de la imagen"

@@ -6,12 +6,12 @@ import EdgeReveal from "./EdgeReveal";
 export default function Filosofia() {
     const imageUrl = cloudImage("filosofia2_cora0m")
   return (
-    <section id="proyectos" className="w-full h-full xl:h-svh bg-gray-200 py-10 xl:-py-0">
+    <section id="filosofia" className="w-full h-full xl:h-svh bg-gray-200 py-20 xl:py-0">
       <div className="w-full h-full">
-      <div className="mx-auto p-8 xl:p-16 flex flex-col xl:flex-row items-center justify-center gap-8 h-full">
+      <div className="mx-auto px-8 xl:px-16 flex flex-col xl:flex-row items-center justify-center gap-8 h-full">
         
         {/* Imagen */}
-        <div className="relative w-full xl:w-3/5 h-[60vh] md:h-[65vh] lg:h-[70vh]  xl:h-[65vh] aspect-video ">
+        <div className="relative w-full xl:w-3/5 aspect-video ">
           <Image
             src={imageUrl}
             alt="reunion de equipo grupambtu"

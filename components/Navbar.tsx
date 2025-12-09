@@ -6,38 +6,74 @@ import Image from "next/image";
 import { cloudImage } from "@/lib/cloudinary";
 import { useScrollNavbar } from "@/hooks/useScrollNavbar";
 
-export default function Navbar() {
+interface NavbarProps {
+  forceDarkAtTop?: boolean; // SOLO fuerza negro cuando isAtTop = true
+}
+
+export default function Navbar({ forceDarkAtTop = false }: NavbarProps) {
   const { isAtTop, showNavbar } = useScrollNavbar();
   const [isOpen, setIsOpen] = useState(false);
 
   const whiteLogo = cloudImage("ligthLogo_is6zy8");
   const blackLogo = cloudImage("logo3_kze5lx");
 
-  // CLIENT-SAFE STYLES
-  const bgColor = isAtTop && !isOpen ? "bg-transparent" : "bg-white";
-  const borderColor =
-    isAtTop && !isOpen ? "border-transparent" : "border-gray-300";
+  // ───────────────────────────────────────────────
+  // OVERRIDE: Si estamos arriba del todo Y esta página lo pide
+  // → la navbar debe ser negra aunque normalmente sería transparente.
+  // ───────────────────────────────────────────────
+  const forcedDark = forceDarkAtTop && isAtTop;
 
-  const linkColors = isAtTop && !isOpen ? "text-white" : "text-black";
-  const iconColor = isAtTop && !isOpen ? "text-white" : "text-black";
-  const logoSrc = isAtTop && !isOpen ? whiteLogo : blackLogo;
+  // ───────────────────────────────────────────────
+  // COLORES SEGÚN ESTADOS
+  // ───────────────────────────────────────────────
+  const bgColor = forcedDark
+    ? "bg-white"
+    : isAtTop && !isOpen
+    ? "bg-transparent"
+    : "bg-white";
+
+  const linkColors = forcedDark
+    ? "text-black"
+    : isAtTop && !isOpen
+    ? "text-white"
+    : "text-black";
+
+  const iconColor = linkColors;
+
+  const logoSrc = forcedDark
+    ? blackLogo
+    : isAtTop && !isOpen
+    ? whiteLogo
+    : blackLogo;
 
   return (
     <>
-      {/* Hover zone */}
-<div
-  className="fixed top-0 left-0 w-full h-[30px] z-60"
-/>
+      {/* ZONA QUE MUESTRA LA NAVBAR AL PASAR EL RATÓN */}
+      <div
+        className="fixed top-0 left-0 w-full h-[30px] z-60"
+      />
 
       <header
-        className={`fixed top-0 left-0 w-full z-50 transition-transform duration-700
+        className={`
+          fixed top-0 left-0 w-full z-50 
+          transition-transform duration-700
           ${showNavbar ? "translate-y-0" : "-translate-y-full"}
           ${bgColor}
         `}
       >
         <nav
-          className={`flex items-center justify-between gap-6 border-b ${borderColor}
-            transition-colors px-6 md:px-12 lg:px-20 py-4
+          className={`
+            flex items-center justify-between gap-6 
+            border-b 
+            ${
+              forcedDark
+                ? "border-gray-300"
+                : isAtTop && !isOpen
+                ? "border-transparent"
+                : "border-gray-300"
+            }
+            transition-colors 
+            px-6 md:px-12 lg:px-20 py-4
           `}
         >
           {/* HAMBURGUESA */}
@@ -68,7 +104,8 @@ export default function Navbar() {
               )}
             </svg>
           </button>
-                    {/* LOGO */}
+
+          {/* LOGO */}
           <Link href="/" className="min-w-[120px]">
             <Image
               src={logoSrc}
@@ -83,7 +120,9 @@ export default function Navbar() {
           <ul
             className={`
               absolute md:static top-full left-0 w-full md:w-auto
-              flex flex-col md:flex-row items-center gap-10 md:gap-6 lg:gap-10 font-[--font-philosopher]
+              flex flex-col md:flex-row items-center
+              gap-10 md:gap-6 lg:gap-10 
+              font-[--font-philosopher]
               ${isOpen ? "block bg-white py-8" : "hidden md:flex"}
             `}
           >
@@ -97,8 +136,13 @@ export default function Navbar() {
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className={`${linkColors} text-md md:text-lg lg:text-xl transition-colors hover:text-gray-400 hover:scale-110`}
                   onClick={() => setIsOpen(false)}
+                  className={`
+                    ${linkColors}
+                    text-md md:text-lg lg:text-xl 
+                    transition-colors 
+                    hover:text-gray-400 hover:scale-110
+                  `}
                 >
                   {item.label}
                 </Link>
