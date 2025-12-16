@@ -22,7 +22,7 @@ export default function Hero() {
 
       {/* 🧱 Contenido principal */}
       <div className="w-full h-full flex items-center justify-start">
-        <div className="md:max-w-5xl w-full mx-auto px-8 flex justify-between">
+        <div className="md:max-w-5xl w-full mx-auto px-4 md:px-8 flex justify-between">
           
           <div className="w-full flex flex-col gap-6 md:gap-20 justify-between text-center pt-10 md:pt-20">
             <h1 className="text-[#f5f5f5] text-2xl md:text-5xl font-philosopher text-shadow-lg text-pretty font-medium">

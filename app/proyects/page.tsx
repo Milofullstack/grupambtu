@@ -15,7 +15,7 @@ export default function AboutPage() {
         <h2 className="text-4xl lg:text-6xl font-philosopher text-white xl:text-black  mb-6 animate-fade-in-up">
           Viviendas entregadas en Manacor
         </h2>
-        <p className="text-2xl lg:text-3xl font-philosopher  text-pretty animate-fade-in-up">
+        <p className="text-lg md:text-2xl lg:text-3xl font-philosopher  text-pretty animate-fade-in-up">
           En 2025, Grup Ambtu completó y entregó su primer conjunto de viviendas
           a precio limitado en Baleares, ubicadas en la Avenida del Tren de
           Manacor. Son 10 viviendas diseñadas con criterios de eficiencia
@@ -34,10 +34,10 @@ export default function AboutPage() {
         align="left"
       >
         <EdgeReveal>
-          <h2 className="text-4xl lg:text-6xl font-philosopher  xl: mb-6">
+          <h2 className="text-4xl lg:text-6xl font-philosopher  mb-6">
             Plan estratégico para 2.000 viviendas nuevas en Baleares
           </h2>
-          <p className="text-2xl lg:text-3xl xl: font-philosopher  text-pretty">
+          <p className="text-lg md:text-2xl lg:text-3xl font-philosopher  text-pretty">
             A partir del análisis técnico de 227 edificios con capacidad de
             reconversión o desarrollo, Grup Ambtu ha diseñado un plan de
             crecimiento que permitiría añadir hasta 2.000 nuevas viviendas al
@@ -56,10 +56,10 @@ export default function AboutPage() {
         align="right"
       >
         <EdgeReveal>
-          <h2 className="text-4xl lg:text-6xl font-philosopher  xl: mb-6">
+          <h2 className="text-4xl lg:text-6xl font-philosopher  mb-6">
             La necesidad real: 9.100 residentes en lista de espera
           </h2>
-          <p className="text-2xl lg:text-3xl xl: font-philosopher  text-pretty">
+          <p className="text-lg md:text-2xl lg:text-3xl font-philosopher  text-pretty">
             Actualmente, más de 9.100 personas aguardan la oportunidad de
             acceder a una vivienda digna en Baleares. Este volumen de demanda
             guía el sistema de puntuación desarrollado por Grup Ambtu y marca
@@ -77,10 +77,10 @@ export default function AboutPage() {
         align="left"
       >
         <EdgeReveal>
-          <h2 className="text-4xl lg:text-6xl font-philosopher xl: mb-6">
+          <h2 className="text-4xl lg:text-6xl font-philosopher xl:mb-6">
             Reconocimiento público: Premio PIMEM 2025
           </h2>
-          <p className="text-2xl lg:text-3xl xl: font-philosopher text-pretty">
+          <p className="text-lg md:text-2xl lg:text-3xl  font-philosopher text-pretty">
             En noviembre de 2025, Grup Ambtu fue distinguido por PIMEM con el
             premio a la Responsabilidad Social y Ética Empresarial. El galardón
             reconoce la labor del grupo en la promoción de vivienda para
