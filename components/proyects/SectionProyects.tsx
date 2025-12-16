@@ -40,14 +40,14 @@ export default function SectionProyects({
             flex flex-col justify-center items-center
             text-center
             px-8 md:px-16 xl:px-24
-            gap-6
+            gap-10
             text-white xl:text-black
             xl:text-left xl:items-start
             xl:w-1/2
             ${isRight ? "xl:order-2" : "xl:order-1"}
           `}
         >
-          <div className="font-garamond text-lg max-w-3xl">
+          <div className="flex flex-col justify-center items-centerfont-garamond text-lg max-w-3xl">
             {children}
           </div>
         </div>

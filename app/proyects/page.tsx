@@ -94,7 +94,7 @@ export default function AboutPage() {
         align="left"
       >
         <EdgeReveal>
-          <h2 className="text-4xl lg:text-6xl font-philosopher xl:mb-6">
+          <h2 className="text-4xl lg:text-6xl font-philosopher mb-10">
             Reconocimiento público: Premio PIMEM 2025
           </h2>
           </EdgeReveal>
