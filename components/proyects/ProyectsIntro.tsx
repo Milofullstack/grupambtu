@@ -1,58 +1,73 @@
 "use client";
-import { useState, useEffect } from "react";
 import Image from "next/image";
 import { cloudImage } from "@/lib/cloudinary";
-
-const words = [
-  "impacto social",
-  "compromiso real",
-  "propósito",
-  "responsabilidad",
-];
-
+import { useEffect, useState } from "react";
 export default function ProjectsIntro() {
-    const imageUrl = cloudImage("edificio1_qtgpsu")
-  const [index, setIndex] = useState(0);
+  const words = ["alma", "consciencia", "futuro"];
+const [index, setIndex] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % words.length);
-    }, 2500); 
-    return () => clearInterval(interval);
-  }, []);
+useEffect(() => {
+  const id = setInterval(() => {
+    setIndex((prev) => prev + 1);
+  }, 2500);
 
+  return () => clearInterval(id);
+}, []);
+
+const safeIndex = index % words.length;
+  const imageUrl = cloudImage("edificio1_qtgpsu");
   return (
-    <section className="w-full min-h-svh flex items-center py-20 bg-[bg-[#f8f6f2]">
-      <div className="max-w-7xl w-full mx-auto px-8 md:px-24 flex flex-col gap-10">
-              <div className="absolute inset-0 -z-10">
-                <Image src={imageUrl} alt="grupambtu" fill className="object-cover object-top" />
-              </div>
-              <div className="absolute inset-0 bg-black/20 -z-10" />
-        
-        {/* TITLE */}
-        <h2 className="font-philosopher text-4xl md:text-5xl font-semibold  leading-relaxed text-white">
-          Proyectos que transforman la vida de quienes viven aquí.
-        </h2>
-
-        {/* ROTATING TEXT */}
-        <div className=" text-xl md:text-2xl lg:text-5xl font-philosopher  text-white flex w-full">
-          <span>Proyectos con&nbsp;</span>
-          <span className="text-xl md:text-2xl lg:text-5xl h-10 text-white md:h-15 font-bold  overflow-hidden inline-block">
-            <span
-              key={index}
-              className="block animate-rotate-up"
-            >
-              {words[index]}
-            </span>
-          </span>
-        </div>
-
-        {/* SUBTEXT */}
-        <p className="text-xl md:text-3xl font-garamond  text-white/70  leading-relaxed">
+    <section className="relative w-full h-svh overflow-hidden">
+      {" "}
+      {/* IMAGEN MOBILE */}{" "}
+      <div className="absolute inset-0 xl:hidden">
+        {" "}
+        <Image
+          src={imageUrl}
+          alt="Grup Ambtu"
+          fill
+          className="object-cover"
+          priority
+        />{" "}
+        <div className="absolute inset-0 bg-black/30" />{" "}
+      </div>{" "}
+      <div className="relative grid h-full grid-cols-1 xl:grid-cols-2">
+        {" "}
+        {/* TEXTO */}{" "}
+        <div className="flex flex-col justify-center px-8 md:px-16 xl:px-24 gap-8 text-white xl:text-black bg-transparent xl:bg-[#f8f6f2]">
+          {" "}
+          <h1 className="font-philosopher text-center xl:text-left text-4xl md:text-5xl xl:text-6xl leading-tight animate-fade-in-up">
+            {" "}
+            Proyectos que transforman la vida de quienes viven aquí.{" "}
+            
+          </h1>{" "}
+          <p className="text-center w-full xl xl:text-left text-4xl md:text-5xl xl:text-6xl font-philosopher animate-fade-in-up">
+            {" "}
+            proyectos con <span className="italic inline-block h-[1em]  align-bottom">
+  <span
+    key={safeIndex}
+    className="inline-block animate-slide-up align-baseline"
+  >
+    {words[safeIndex]}
+  </span>
+</span>
+          </p>{" "}
+          <p className="text-center xl:text-left text-2xl lg:text-3xl text-white xl:text-black font-philosopher  text-pretty animate-fade-in-up">
           Nuestro trabajo no empieza en los edificios. <br />Empieza en las personas que necesitan un hogar.
         </p>
-
-      </div>
+        </div>{" "}
+        {/* IMAGEN DESKTOP */}{" "}
+        <div className="relative hidden xl:block">
+          {" "}
+          <Image
+            src={imageUrl}
+            alt="Grup Ambtu"
+            fill
+            className="object-cover"
+            priority
+          />{" "}
+        </div>{" "}
+      </div>{" "}
     </section>
   );
 }

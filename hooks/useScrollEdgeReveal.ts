@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-export function useScrollEdgeReveal(offset: number = 150) {
+export function useScrollEdgeReveal(offset: number = 80) {
   const ref = useRef<HTMLDivElement | null>(null);
   const [visible, setVisible] = useState(false);
   const lastY = useRef(0);

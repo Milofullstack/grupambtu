@@ -3,54 +3,68 @@
 import Image from "next/image";
 import { cloudImage } from "@/lib/cloudinary";
 
-interface Props {
+type Props = {
   title: string;
   imageId: string;
   align?: "left" | "right";
   children: React.ReactNode;
-}
+};
 
-export default function Proyects({
+export default function SectionProyects({
   title,
   imageId,
-  align = "right",
+  align = "left",
   children,
 }: Props) {
   const imageUrl = cloudImage(imageId);
   const isRight = align === "right";
 
   return (
-    <section className="w-full min-h-svh flex flex-col lg:flex-row border-b border-gray-900">
-      
-      {/* TEXTO */}
-      <div
-        className={`
-          flex items-center justify-center 
-          w-full lg:w-1/2 
-          px-8 md:px-16
-          ${isRight ? "order-1 lg:order-0" : "order-1 lg:order-2"}
-        `}
-      >
-        <div className="max-w-xl flex flex-col gap-10">
-          {children}
-        </div>
-      </div>
-
-      {/* IMAGEN (pantalla partida real) */}
-      <div
-        className={`
-          relative 
-          w-full lg:w-1/2 
-          h-[50vh] lg:h-svh
-          ${isRight ? "order-2 lg:order-0" : "order-2 lg:order-1"}
-        `}
-      >
+    <section className="relative w-full h-svh overflow-hidden xl:bg-[#f8f6f2]">
+      {/* IMAGEN MOBILE COMO FONDO */}
+      <div className="absolute inset-0 xl:hidden">
         <Image
           src={imageUrl}
           alt={title}
           fill
-          className="object-cover object-center"
+          className="object-cover"
         />
+        <div className="absolute inset-0 bg-black/40" />
+      </div>
+
+      <div className="relative grid h-full grid-cols-1 xl:grid-cols-2">
+        {/* BLOQUE TEXTO */}
+        <div
+          className={`
+            flex flex-col justify-center
+            px-8 md:px-16 xl:px-24
+            gap-6
+            text-white xl:text-black
+            text-center xl:text-left
+            items-center xl:items-start
+            ${isRight ? "xl:order-2" : "xl:order-1"}
+          `}
+        >
+
+          <div className="font-garamond text-lg max-w-3xl">
+            {children}
+          </div>
+        </div>
+
+        {/* IMAGEN DESKTOP */}
+        <div
+          className={`
+            relative hidden xl:block
+            ${isRight ? "xl:order-1" : "xl:order-2"}
+          `}
+        >
+          <Image
+            src={imageUrl}
+            alt={title}
+            fill
+            className="object-cover"
+          />
+        </div>
       </div>
     </section>
   );
