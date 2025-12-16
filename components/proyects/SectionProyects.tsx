@@ -20,7 +20,7 @@ export default function SectionProyects({
   const isRight = align === "right";
 
   return (
-    <section className="relative w-full h-svh overflow-hidden xl:bg-[#f8f6f2]">
+    <section className="relative w-full min-h-dvh overflow-hidden xl:bg-[#f8f6f2]">
       {/* IMAGEN MOBILE COMO FONDO */}
       <div className="absolute inset-0 xl:hidden">
         <Image
