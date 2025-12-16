@@ -33,7 +33,7 @@ export default function SectionProyects({
       </div>
 
       {/* CONTENEDOR FLEX */}
-      <div className="relative flex flex-col xl:flex-row h-full">
+      <div className="relative flex flex-col xl:flex-row h-full py-20 md:py-0">
         {/* BLOQUE TEXTO */}
         <div
           className={`

@@ -17,7 +17,7 @@ useEffect(() => {
 const safeIndex = index % words.length;
   const imageUrl = cloudImage("edificio1_qtgpsu");
   return (
-    <section className="relative w-full min-h-dvh md:h-dvh overflow-hidden">
+    <section className="relative w-full min-h-dvh md:h-dvh overflow-hidden ">
       {" "}
       {/* IMAGEN MOBILE */}{" "}
       <div className="absolute inset-0 xl:hidden">
@@ -34,7 +34,7 @@ const safeIndex = index % words.length;
       <div className="relative grid h-full grid-cols-1 xl:grid-cols-2">
         {" "}
         {/* TEXTO */}{" "}
-        <div className="flex flex-col justify-center px-8 md:px-16 xl:px-24 gap-8 text-white xl:text-black bg-transparent xl:bg-[#f8f6f2]">
+        <div className="flex flex-col justify-center px-8 md:px-16 xl:px-24 gap-8 text-white xl:text-black bg-transparent xl:bg-[#f8f6f2] pt-32 md:pt-0">
           {" "}
           <h1 className="font-philosopher text-center xl:text-left text-4xl md:text-5xl xl:text-6xl leading-tight animate-fade-in-up">
             {" "}
