@@ -36,7 +36,7 @@ export default function SectionProyects({
       <div className="relative flex flex-col xl:flex-row h-full py-20 md:py-0">
         {/* BLOQUE TEXTO */}
         <div
-          className={`
+          className={`w-full h-full
             flex flex-col justify-center items-center
             text-center
             px-8 md:px-16 xl:px-24

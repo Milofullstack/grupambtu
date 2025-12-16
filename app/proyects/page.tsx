@@ -53,7 +53,7 @@ export default function AboutPage() {
             parque residencial de las islas.</p>
             </EdgeReveal>
             <EdgeReveal>
-            <p> Cada proyecto se plantea con
+            <p className="text-lg md:text-2xl lg:text-3xl font-philosopher  text-pretty"> Cada proyecto se plantea con
             tiempos de ejecución de 15 a 18 meses, priorizando eficiencia,
             calidad y respuesta a la demanda local. Este plan representa una
             solución de escala para un problema estructural.
@@ -80,7 +80,7 @@ export default function AboutPage() {
             dónde tiene sentido iniciar nuevos proyectos:
             </p></EdgeReveal>
             <EdgeReveal>
-            <p> zonas con alta
+            <p className="text-lg md:text-2xl lg:text-3xl font-philosopher  text-pretty"> zonas con alta
             demanda, residentes con vínculos laborales y familiares en la isla,
             y perfiles vulnerables o prioritarios. El objetivo es simple: que
             nadie quede atrás.
@@ -108,7 +108,7 @@ export default function AboutPage() {
             </p>
             </EdgeReveal>
             <EdgeReveal>
-            <p> La frase que marcó la ceremonia resume su
+            <p className="text-lg md:text-2xl lg:text-3xl font-philosopher  text-pretty"> La frase que marcó la ceremonia resume su
             misión: “Viviendas para los residentes. Hoteles para los turistas.”
             Una declaración de principios en un momento crítico para las islas.
           </p>
