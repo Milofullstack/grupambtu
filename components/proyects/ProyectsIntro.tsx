@@ -27,7 +27,7 @@ export default function ProjectsIntro() {
               <div className="absolute inset-0 -z-10">
                 <Image src={imageUrl} alt="grupambtu" fill className="object-cover object-top" />
               </div>
-              <div className="absolute inset-0 bg-black/50 -z-10" />
+              <div className="absolute inset-0 bg-black/20 -z-10" />
         
         {/* TITLE */}
         <h2 className="font-philosopher text-4xl md:text-5xl font-semibold  leading-relaxed text-white">

@@ -2,13 +2,22 @@ import SectionSplit from "@/components/proyects/SectionProyects";
 import EdgeReveal from "@/components/EdgeReveal";
 import Footer from "@/components/Footer";
 import ProyectsIntro from "@/components/proyects/ProyectsIntro";
-import Navbar from "@/components/Navbar";
 
 export default function AboutPage() {
   return (
     <>
     {/* <Navbar forceDarkAtTop={true} /> */}
     <ProyectsIntro/>
+          <SectionSplit title="Grup Ambtu" imageId="edificio1_qtgpsu" align="right">
+        <EdgeReveal>
+        <h2 className="text-4xl lg:text-6xl font-philosopher text-black  mb-6 animate-fade-in-up">
+          Proyectos que transforman la vida de quienes viven aquí.
+        </h2>
+        <p className="text-2xl lg:text-3xl text-black font-philosopher  text-pretty animate-fade-in-up">
+          Nuestro trabajo no empieza en los edificios. <br />Empieza en las personas que necesitan un hogar.
+        </p>
+        </EdgeReveal>
+      </SectionSplit>
       {/* Primera sección */}
       <SectionSplit title="Grup Ambtu" imageId="edificio7_hv8hlm" align="left">
         <EdgeReveal>

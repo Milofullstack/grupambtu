@@ -28,7 +28,7 @@ export default function Proyects({
           flex items-center justify-center 
           w-full lg:w-1/2 
           px-8 md:px-16
-          ${isRight ? "order-1 lg:order-none" : "order-1 lg:order-2"}
+          ${isRight ? "order-1 lg:order-0" : "order-1 lg:order-2"}
         `}
       >
         <div className="max-w-xl flex flex-col gap-10">

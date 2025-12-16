@@ -18,12 +18,12 @@ export default function Hero() {
       </div>
 
       {/* 🩶 Capa de oscurecimiento */}
-      <div className="absolute inset-0 bg-black/40 -z-10" />
+      <div className="absolute inset-0 bg-black/20 -z-10" />
 
       {/* 🧱 Contenido principal */}
       <div className="w-full h-full flex items-center justify-start">
         <div className="md:max-w-5xl w-full mx-auto px-8 flex justify-between">
-          <div className="bg-black/20 px-2 py-10 rounded-4xl">
+          
           <div className="w-full flex flex-col gap-6 md:gap-20 justify-between text-center pt-10 md:pt-20">
             <h1 className="text-[#f5f5f5] text-2xl md:text-5xl font-philosopher text-shadow-lg text-pretty font-medium">
               <span className="font-bold text-2xl md:text-5xl"> GrupAmbtu</span> no es solo una promotora inmobiliaria - <span className="font-bold text-3xl md:text-5xl"> es un
@@ -60,7 +60,7 @@ export default function Hero() {
                 />
               </button>
             </div>
-          </div></div>
+          </div>
           
         </div>
       </div>
