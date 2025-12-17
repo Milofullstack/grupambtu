@@ -1,11 +1,14 @@
 "use client";
+
+import Link from "next/link";
+
 // import { cloudVideo } from "@/app/lib/cloudinary";
 // import { cloudImage } from "@/app/lib/cloudinary";
 
 export default function Hero() {
   // const videoUrl = cloudVideo("")
   return (
-    <section id="hero" className="relative w-full h-svh overflow-hidden pt-26 lg:pt-28 xl:pt-36">
+    <section id="hero" className="relative w-full h-svh overflow-hidden  pt-26 lg:pt-28 xl:pt-36">
       {/* 🎥 Video de fondo */}
       <div className="absolute inset-0 -z-10">
         <iframe
@@ -38,14 +41,15 @@ export default function Hero() {
             </h2>
 
             <div className="w-full flex justify-center items-center">
+           <div className="w-full flex justify-center items-center">
+             <Link href="/contact">
               <button
-                className="bg-none text-white text-shadow-md
-                  group relative isolate overflow-hidden
-                  mt-8 inline-flex items-center
-                  rounded-2xl border border-white px-6 py-2 lg:px-10 lg:py-4
-                 font-philosopher text-xl
-                  transition-transform duration-300
-                  hover:scale-105 active:scale-95"
+                className="group relative isolate overflow-hidden
+                mt-4 inline-flex items-center
+                rounded-2xl border border-white px-6 py-2 md:px-10 md:py-4
+                font-philosopher text-xl text-white
+                transition-transform duration-300
+                hover:scale-105 active:scale-95 animate-fade-in-up"
               >
                 <span className="relative lg:text-2xl z-10 transition-colors duration-500 group-hover:text-black">
                   Contáctanos
@@ -54,11 +58,13 @@ export default function Hero() {
                 <span
                   aria-hidden
                   className="pointer-events-none absolute inset-0 z-0
-                  bg-gray-300 origin-right scale-x-0 transform-gpu
+                  bg-white origin-right scale-x-0 transform-gpu
                   transition-transform duration-1000 ease-out
                   group-hover:scale-x-100"
                 />
               </button>
+            </Link>
+           </div>
             </div>
           </div>
           

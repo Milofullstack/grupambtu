@@ -2,7 +2,7 @@ import EdgeReveal from "@/components/EdgeReveal";
 
 export default function Location() {
   return (
-<section id="localizacion" className="w-full bg-white pt-20 pb-10">
+<section id="localizacion" className="w-full bg-[#f8f6f2] pt-20 pb-10">
   <div className="max-w-8xl mx-auto px-8 md:px-16 lg:px-32 flex flex-col gap-16 justify-between">
     <div className="flex flex-col gap-8 text-center">
         <EdgeReveal>

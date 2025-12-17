@@ -9,10 +9,10 @@ export default function Equipo() {
   return (
     <section
       id="equipo"
-      className="w-full h-full xl:h-screen bg-gray-200  py-20 xl:my-6"
+      className="w-full h-full xl:h-screen bg-[#f8f6f2]  "
     >
       <div className="w-full h-full">
-        <div className="mx-auto px-8 xl:pl-16 xl:px-0 flex flex-col xl:flex-row-reverse items-center justify-center gap-10 h-full">
+        <div className="mx-auto px-8 xl:pl-16 xl:px-0 py-20 xl:my-6 flex flex-col xl:flex-row-reverse items-center justify-center gap-10 h-full">
           {/* Imagen */}
           <div className="relative 
           w-full 
@@ -62,7 +62,7 @@ export default function Equipo() {
                     <span
                       aria-hidden
                       className="pointer-events-none absolute inset-0 z-0
-                  bg-gray-600 origin-right scale-x-0 transform-gpu
+                  bg-gray-400 origin-right scale-x-0 transform-gpu
                   transition-transform duration-1000 ease-out
                   group-hover:scale-x-100"
                     />

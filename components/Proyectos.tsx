@@ -28,11 +28,11 @@ export default function Filosofia() {
             <EdgeReveal>
               <p className="mt-4 text-lg md:text-2xl lg:text-3xl text-[#f5f5f5] font-medium font-garamond text-shadow-lg leading-relaxed">
                 En GrupAmbtu impulsamos proyectos que combinan viabilidad,
-                innovación y compromiso social. Fuimos pioneros en{" "}
+                innovación y compromiso social. Fuimos pioneros en
                 <span className="font-bold">
                   la primera promoción de Viviendas de Protección Limitada en
                   Mallorca,
-                </span>{" "}
+                </span>
                 un modelo que redefine el acceso a la vivienda con criterios de
                 sostenibilidad, eficiencia y valor real para las personas.
               </p>
@@ -40,7 +40,7 @@ export default function Filosofia() {
 
             <EdgeReveal>
               <div className="flex justify-center">
-                <Link href="/empresa">
+                <Link href="/proyects">
                   <button
                     className="bg-none text-white text-shadow-md
             group relative isolate overflow-hidden

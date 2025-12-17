@@ -5,8 +5,8 @@ import { cloudImage } from "../lib/cloudinary";
 export default function Footer() {
   const imageUrl = cloudImage("logo3_kze5lx")
   return (
-    <footer className="bg-white text-black  py-12 px-16 mt-20">
-      <div className="w-full mb-20 flex flex-col items-center"> 
+    <footer className="bg-[#f8f6f2] text-black ">
+      <div className="w-full mb-20 pt-32  flex flex-col items-center"> 
         <Link href="/">
             <Image
               src={imageUrl}
@@ -17,7 +17,7 @@ export default function Footer() {
             />
           </Link>
       </div>
-      <div className="w-full mx-auto mb-24 flex flex-col text-center md:flex-row justify-evenly gap-10 md:gap-20">
+      <div className="w-full mx-auto mb-24 py-12 px-16 mt-20 flex flex-col text-center md:flex-row justify-evenly gap-10 md:gap-20">
         
         {/* Columna 1: Navegación */}
         <div className="flex-1 md:flex-1">
@@ -61,7 +61,7 @@ export default function Footer() {
       </div>
 
       {/* Línea final */}
-      <div className="md:my-10 border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
+      <div className="md:py-10 border-t border-gray-700 bg-[#f8f6f2] pt-6 text-center text-sm text-gray-500">
         © {new Date().getFullYear()} GrupAmbtu. Todos los derechos reservados.
       </div>
     </footer>

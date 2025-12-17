@@ -17,32 +17,32 @@ useEffect(() => {
 const safeIndex = index % words.length;
   const imageUrl = cloudImage("edificio1_qtgpsu");
   return (
-    <section className="relative w-full min-h-dvh md:h-dvh overflow-hidden ">
-      {" "}
-      {/* IMAGEN MOBILE */}{" "}
+    <section className="relative w-full min-h-dvh md:h-dvh overflow-hidden bg-[#f8f6f2]">
+      
+      {/* IMAGEN MOBILE */}
       <div className="absolute inset-0 xl:hidden">
-        {" "}
+        
         <Image
           src={imageUrl}
           alt="Grup Ambtu"
           fill
           className="object-cover"
           priority
-        />{" "}
-        <div className="absolute inset-0 bg-black/30" />{" "}
-      </div>{" "}
+        />
+        <div className="absolute inset-0 bg-black/30" />
+      </div>
       <div className="relative grid h-full grid-cols-1 xl:grid-cols-2">
-        {" "}
-        {/* TEXTO */}{" "}
-        <div className="flex flex-col justify-center px-8 md:px-16 xl:px-24 gap-8 text-white xl:text-black bg-transparent xl:bg-[#f8f6f2] pt-32 md:pt-0">
-          {" "}
+        
+        {/* TEXTO */}
+        <div className="flex flex-col justify-center px-8 md:px-16 xl:px-24 gap-8 text-white xl:text-black bg-transparent  pt-32 md:pt-0">
+          
           <h1 className="font-philosopher text-center xl:text-left text-4xl md:text-5xl xl:text-6xl leading-tight animate-fade-in-up">
-            {" "}
-            Proyectos que transforman la vida de quienes viven aquí.{" "}
             
-          </h1>{" "}
+            Proyectos que transforman la vida de quienes viven aquí.
+            
+          </h1>
           <p className="text-center w-full xl xl:text-left text-4xl md:text-5xl xl:text-6xl font-philosopher animate-fade-in-up">
-            {" "}
+            
             proyectos con <span className="italic inline-block h-[1em]  align-bottom">
   <span
     key={safeIndex}
@@ -51,23 +51,23 @@ const safeIndex = index % words.length;
     {words[safeIndex]}
   </span>
 </span>
-          </p>{" "}
+          </p>
           <p className="text-center xl:text-left text-2xl lg:text-3xl text-white xl:text-black font-philosopher  text-pretty animate-fade-in-up">
           Nuestro trabajo no empieza en los edificios. <br />Empieza en las personas que necesitan un hogar.
         </p>
-        </div>{" "}
-        {/* IMAGEN DESKTOP */}{" "}
+        </div>
+        {/* IMAGEN DESKTOP */}
         <div className="relative hidden xl:block">
-          {" "}
+          
           <Image
             src={imageUrl}
             alt="Grup Ambtu"
             fill
             className="object-cover"
             priority
-          />{" "}
-        </div>{" "}
-      </div>{" "}
+          />
+        </div>
+      </div>
     </section>
   );
 }
