@@ -20,7 +20,7 @@ export default function SectionProyects({
   const isRight = align === "right";
 
   return (
-    <section className="relative w-full min-h-dvh md:h-svh overflow-hidden bg-[#f8f6f2]">
+    <section className="relative w-full h-svh overflow-hidden bg-[#f8f6f2]">
       {/* IMAGEN MOBILE COMO FONDO */}
       <div className="absolute inset-0 xl:hidden">
         <Image
@@ -47,7 +47,7 @@ export default function SectionProyects({
             ${isRight ? "xl:order-2" : "xl:order-1"}
           `}
         >
-          <div className="flex flex-col justify-center items-centerfont-garamond text-lg max-w-3xl">
+          <div className="flex flex-col justify-center items-center font-garamond text-lg max-w-3xl">
             {children}
           </div>
         </div>

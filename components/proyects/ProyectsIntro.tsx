@@ -17,7 +17,7 @@ useEffect(() => {
 const safeIndex = index % words.length;
   const imageUrl = cloudImage("edificio1_qtgpsu");
   return (
-    <section className="relative w-full min-h-dvh md:h-dvh overflow-hidden bg-[#f8f6f2]">
+    <section className="relative w-full h-svh overflow-hidden bg-[#f8f6f2]">
       
       {/* IMAGEN MOBILE */}
       <div className="absolute inset-0 xl:hidden">

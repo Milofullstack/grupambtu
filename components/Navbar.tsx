@@ -63,7 +63,7 @@ const linkColors = `
         <nav
           className={`
             flex items-center justify-between gap-6 
-            border-b 
+           
             ${
               forcedDark
                 ? "border-gray-300"
