@@ -21,29 +21,28 @@ export default function Navbar({ forceDarkAtTop = false }: NavbarProps) {
   // OVERRIDE: Si estamos arriba del todo Y esta página lo pide
   // → la navbar debe ser negra aunque normalmente sería transparente.
   // ───────────────────────────────────────────────
-  const forcedDark = forceDarkAtTop && isAtTop;
+  const forcedDark = forceDarkAtTop && isAtTop
 
   // ───────────────────────────────────────────────
   // COLORES SEGÚN ESTADOS
   // ───────────────────────────────────────────────
-  const bgColor = forcedDark
-    ? "bg-white"
-    : isAtTop && !isOpen
-    ? "bg-transparent"
-    : "bg-white";
+const bgColor = `
+  ${isAtTop && !isOpen ? "bg-transparent" : "bg-[#f8f6f2]"}
+  ${forcedDark ? "md:bg-[#f8f6f2]" : ""}
+`;
 
-  const linkColors = forcedDark
-    ? "text-black"
-    : isAtTop && !isOpen
-    ? "text-white"
-    : "text-black";
+const linkColors = `
+  ${isAtTop && !isOpen ? "text-white" : "text-black"}
+  ${forcedDark ? "md:text-black" : ""}
+`;
 
   const iconColor = linkColors;
 
-  const logoSrc = forcedDark
-    ? blackLogo
-    : isAtTop && !isOpen
-    ? whiteLogo
+  const logoSrc =
+  isAtTop && !isOpen
+    ? forceDarkAtTop
+      ? blackLogo
+      : whiteLogo
     : blackLogo;
 
   return (
@@ -130,7 +129,7 @@ export default function Navbar({ forceDarkAtTop = false }: NavbarProps) {
               { href: "/", label: "Inicio" },
               { href: "/about", label: "Empresa" },
               { href: "/proyects", label: "Proyectos" },
-              { href: "/contacto", label: "Contacto" },
+              { href: "/contact", label: "Contacto" },
               { href: "/social-media", label: "Social Media" },
             ].map((item) => (
               <li key={item.href}>
