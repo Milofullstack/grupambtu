@@ -51,11 +51,11 @@ export default function Servicios() {
           </h2>
         </EdgeReveal>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-0 shadow-2xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2  bg-[#f8f6f2]">
           {servicios.map((servicio, index) => (
             
               <div key={index} className="
-                    group flex items-center justify-start gap-6
+                    group flex items-center justify-start gap-10
                     bg-black/40 backdrop-blur-sm rounded-2xl
                     border border-white/40
                     p-8 md:p-10 text-left
@@ -64,7 +64,7 @@ export default function Servicios() {
               >
                 {/* Icono a la izquierda */}
                 <EdgeReveal>
-                <div className="shrink-0 text-white">
+                <div className="shrink-0 text-white ">
                   {servicio.icon}
                 </div></EdgeReveal>
 

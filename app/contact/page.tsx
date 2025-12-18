@@ -13,11 +13,11 @@ export default function ContactPage() {
         
         {/* INTRO */}
         <header className="flex flex-col gap-6 max-w-2xl">
-          <h1 className="font-philosopher text-4xl md:text-5xl">
+          <h1 className="font-philosopher text-4xl text-black md:text-5xl">
             Contacto
           </h1>
 
-          <p className="font-garamond text-lg text-gray-700">
+          <p className="font-garamond text-lg text-black">
             Cuéntanos tu situación y revisaremos tu caso con atención.
             Este formulario está pensado para consultas reales relacionadas
             con vivienda y proyectos de Grup Ambtu.
@@ -31,7 +31,7 @@ export default function ContactPage() {
         >
           {/* NOMBRE */}
           <div className="flex flex-col gap-2">
-            <label className="font-garamond text-sm">
+            <label className="font-garamond text-lg text-black">
               Nombre
             </label>
             <input
@@ -44,7 +44,7 @@ export default function ContactPage() {
 
           {/* EMAIL */}
           <div className="flex flex-col gap-2">
-            <label className="font-garamond text-sm">
+            <label className="font-garamond text-lg text-black">
               Email
             </label>
             <input
@@ -57,7 +57,7 @@ export default function ContactPage() {
 
           {/* MENSAJE */}
           <div className="flex flex-col gap-2">
-            <label className="font-garamond text-sm">
+            <label className="font-garamond text-lg text-black">
               Mensaje
             </label>
             <textarea
@@ -69,7 +69,7 @@ export default function ContactPage() {
           </div>
 
           {/* AVISO */}
-          <p className="font-garamond text-sm text-gray-600 max-w-xl">
+          <p className="font-garamond text-lg text-gray-600 max-w-xl">
             Revisamos personalmente cada mensaje. Si encaja con nuestro
             enfoque, nos pondremos en contacto contigo en un plazo aproximado
             de 24–48 horas.
@@ -78,7 +78,7 @@ export default function ContactPage() {
           {/* BOTÓN */}
           <button
             type="submit"
-            className="self-start px-8 py-3 border border-black font-garamond text-sm hover:bg-black hover:text-white transition-colors"
+            className="self-center px-8 py-3 rounded-2xl border border-black font-garamond text-lg hover:bg-black hover:text-white transition-colors"
           >
             Enviar mensaje
           </button>
@@ -86,7 +86,7 @@ export default function ContactPage() {
 
         {/* INFO ADICIONAL */}
         <footer className="flex flex-col gap-4 max-w-xl pt-12 border-t border-gray-300">
-          <p className="font-garamond text-sm text-gray-700">
+          <p className="font-garamond text-sm text-black">
             También puedes escribirnos directamente a:
           </p>
 

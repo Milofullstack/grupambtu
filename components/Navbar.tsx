@@ -121,7 +121,7 @@ const linkColors = `
               absolute md:static top-full left-0 w-full md:w-auto
               flex flex-col md:flex-row items-center
               gap-10 md:gap-6 lg:gap-10 
-              font-[--font-philosopher]
+              font-philosopher
               ${isOpen ? "block bg-white py-8" : "hidden md:flex"}
             `}
           >
