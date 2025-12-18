@@ -25,11 +25,11 @@ export default function SectionAbout({
       </div>
       <div className="absolute inset-0 bg-black/50 -z-10" />
       <div
-        className={`max-w-8xl w-full mx-auto px-8 md:px-24 flex flex-col ${
+        className={`max-w-8xl w-full h-svh mx-auto px-8 md:px-24 flex flex-col justify-center  ${
           isRight ? "items-end" : "items-start"
         }`}
       >
-        <div className="w-full xl:w-2/3">
+        <div className="w-full h-svh xl:w-2/3 flex flex-col justify-center ">
         {children}
         </div>
       </div>
