@@ -63,10 +63,10 @@ export default function Servicios() {
                 "
               >
                 {/* Icono a la izquierda */}
-                <EdgeReveal>
+                
                 <div className="shrink-0 text-white ">
                   {servicio.icon}
-                </div></EdgeReveal>
+                </div>
 
                 {/* Texto a la derecha */}
                 <div> 

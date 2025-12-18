@@ -36,14 +36,14 @@ const safeIndex = index % words.length;
         {/* TEXTO */}
         <div className="flex flex-col justify-center px-8 md:px-16 xl:px-24 gap-8 text-white xl:text-black bg-transparent  pt-32 md:pt-0">
           
-          <h1 className="font-philosopher text-center xl:text-left text-4xl md:text-5xl xl:text-6xl leading-tight animate-fade-in-up">
+          <h1 className="font-philosopher text-center xl:text-left text-3xl md:text-4xl xl:text-5xl leading-tight animate-fade-in-up">
             
             Proyectos que transforman la vida de quienes viven aquí.
             
           </h1>
-          <p className="text-center w-full xl xl:text-left text-4xl md:text-5xl xl:text-6xl font-philosopher animate-fade-in-up">
+          <p className="text-center w-full xl xl:text-left text-3xl md:text-5xl xl:text-5xl font-philosopher animate-fade-in-up">
             
-            proyectos con <span className="italic inline-block h-[1em]  align-bottom">
+            proyectos con <br /> <span className="italic inline-block h-[1em]  align-bottom">
   <span
     key={safeIndex}
     className="inline-block animate-slide-up align-baseline"
