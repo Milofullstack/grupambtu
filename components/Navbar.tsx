@@ -72,7 +72,7 @@ const linkColors = `
                 : "border-gray-300"
             }
             transition-colors 
-            px-6 md:px-12 lg:px-20 py-4
+            px-6 md:px-12 lg:px-20 py-2 md:py-4
           `}
         >
           {/* HAMBURGUESA */}
@@ -105,13 +105,13 @@ const linkColors = `
           </button>
 
           {/* LOGO */}
-          <Link href="/" className="min-w-[120px]">
+          <Link href="/" className="min-w-[60px]">
             <Image
               src={logoSrc}
               alt="Grup Ambtu"
               width={120}
               height={120}
-              className="cursor-pointer select-none"
+              className="cursor-pointer select-none h-[90px] w-[90px] md:h-[120px] md:w-[120px] "
             />
           </Link>
 
@@ -122,7 +122,7 @@ const linkColors = `
               flex flex-col md:flex-row items-center
               gap-10 md:gap-6 lg:gap-10 
               font-philosopher
-              ${isOpen ? "block bg-white py-8" : "hidden md:flex"}
+              ${isOpen ? "block bg-[#f8f6f2] py-8" : "hidden md:flex"}
             `}
           >
             {[
