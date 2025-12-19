@@ -69,7 +69,7 @@ export default function ContactPage() {
           </div>
 
           {/* AVISO */}
-          <p className="font-garamond text-lg text-gray-600 max-w-xl">
+          <p className="font-garamond text-lg text-black max-w-xl">
             Revisamos personalmente cada mensaje. Si encaja con nuestro
             enfoque, nos pondremos en contacto contigo en un plazo aproximado
             de 24–48 horas.
@@ -78,7 +78,7 @@ export default function ContactPage() {
           {/* BOTÓN */}
           <button
             type="submit"
-            className="self-center px-8 py-3 rounded-2xl border border-black font-garamond text-lg hover:bg-black hover:text-white transition-colors"
+            className="self-center px-8 py-3 rounded-2xl border text-black border-black font-garamond text-lg hover:bg-black hover:text-white transition-colors"
           >
             Enviar mensaje
           </button>
@@ -94,11 +94,11 @@ export default function ContactPage() {
             <span className="font-medium">contacto@grupambtu.com</span>
           </p>
 
-          <p className="font-garamond text-sm text-gray-600">
+          <p className="font-garamond text-sm text-black">
             Trabajamos principalmente en Mallorca y alrededores.
           </p>
 
-          <p className="font-garamond text-xs text-gray-500 pt-4">
+          <p className="font-garamond text-xs text-black pt-4">
             Al enviar este formulario aceptas nuestra política de privacidad.
           </p>
         </footer>

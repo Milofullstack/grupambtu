@@ -6,7 +6,7 @@ import { cloudImage } from "../lib/cloudinary";
 import EdgeReveal from "./EdgeReveal";
 
 export default function Equipo() {
-  const imageUrl = cloudImage("grup2_zh00rk");
+  const imageUrl = cloudImage("DSC08369_hsdoi9");
 
   return (
     <section
@@ -25,7 +25,7 @@ export default function Equipo() {
         <div className="absolute inset-0 bg-black/30" />
       </div>
 
-      <div className="relative mx-auto px-8 lg:px-0 py-20 lg:py-0 h-full flex flex-col lg:flex-row-reverse items-center justify-center gap-10 lg:gap-0">
+      <div className="relative mx-auto px-8  py-20 lg:py-0 h-full flex flex-col lg:flex-row-reverse items-center justify-center gap-10 lg:gap-0">
         {/* IMAGEN NORMAL (lg+) */}
         <div className="relative hidden xl:block w-full  h-[60vh] lg:h-screen">
           <Image
@@ -56,7 +56,7 @@ export default function Equipo() {
           </EdgeReveal>
 
           <EdgeReveal>
-            <p className="text-xl md:text-2xl font-garamond font-light leading-relaxed max-w-2xl text-white/90 xl:text-gray-500">
+            <p className="text-2xl md:text-3xl font-garamond font-light leading-relaxed max-w-2xl text-white/90 xl:text-gray-500">
               Contamos con un equipo de profesionales creativos que evalúa cada
               proyecto con cuidado para ajustarse a las limitaciones financieras
               y de tiempo, aportando experiencia en desarrollos de pequeña y gran
@@ -66,7 +66,7 @@ export default function Equipo() {
 
           <EdgeReveal>
             <div className="pt-10 flex justify-center xl:justify-start">
-              <Link href="/equipo">
+              <Link href="/team">
                 <button
                   className="self-center
                     group relative isolate overflow-hidden

@@ -6,7 +6,7 @@ export default function Footer() {
   const imageUrl = cloudImage("logo3_kze5lx")
   return (
     <footer className="bg-[#f8f6f2] text-black ">
-      <div className="w-full mb-20 pt-32  flex flex-col items-center"> 
+      <div className="w-full mb-20 pt-16  flex flex-col items-center"> 
         <Link href="/">
             <Image
               src={imageUrl}
@@ -23,11 +23,11 @@ export default function Footer() {
         <div className="flex-1 md:flex-1">
           <h3 className="text-xl font-philosopher mb-4">Navegación</h3>
           <ul className="space-y-2 text-sm text-gray-500">
-            <li><Link href="#hero" className="hover:text-white">Inicio</Link></li>
-            <li><Link href="#sobre-nosotros" className="hover:text-white">Empresa</Link></li>
-            <li><Link href="#historia" className="hover:text-white">Historia</Link></li>
-            <li><Link href="#proyectos" className="hover:text-white">Proyectos</Link></li>
-            <li><Link href="#contacto" className="hover:text-white">Contacto</Link></li>
+            <li><Link href="/" className="hover:text-white">Inicio</Link></li>
+            <li><Link href="/about" className="hover:text-white">Empresa</Link></li>
+            <li><Link href="/projects" className="hover:text-white">Proyectos</Link></li>
+            <li><Link href="/team" className="hover:text-white">Equipo</Link></li>
+            <li><Link href="/contact" className="hover:text-white">Contacto</Link></li>
           </ul>
         </div>
 

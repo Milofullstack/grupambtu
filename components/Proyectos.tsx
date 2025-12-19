@@ -4,7 +4,7 @@ import { cloudImage } from "../lib/cloudinary";
 import EdgeReveal from "./EdgeReveal";
 
 export default function Filosofia() {
-  const imageUrl = cloudImage("edificio5_attqyt");
+  const imageUrl = cloudImage("edificio3_vmunh8");
   return (
     <section id="proyectos" className="relative w-full h-svh">
       <div className="absolute inset-0 -z-10">
@@ -40,7 +40,7 @@ export default function Filosofia() {
 
             <EdgeReveal>
               <div className="flex justify-center">
-                <Link href="/proyects">
+                <Link href="/projects">
                   <button
                     className="bg-none text-white text-shadow-md
             group relative isolate overflow-hidden

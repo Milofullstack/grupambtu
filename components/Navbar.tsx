@@ -36,7 +36,15 @@ const linkColors = `
   ${forcedDark ? "md:text-black" : ""}
 `;
 
-  const iconColor = linkColors;
+  const iconColor = `
+  ${
+    forcedDark
+      ? "text-black"
+      : isAtTop && !isOpen
+      ? "text-white"
+      : "text-black"
+  }
+`;
 
   const logoSrc =
   isAtTop && !isOpen
@@ -55,7 +63,7 @@ const linkColors = `
       <header
         className={`
           fixed top-0 left-0 w-full z-50 
-          transition-transform duration-700
+          transition-transform duration-1250
           ${showNavbar ? "translate-y-0" : "-translate-y-full"}
           ${bgColor}
         `}
@@ -128,9 +136,9 @@ const linkColors = `
             {[
               { href: "/", label: "Inicio" },
               { href: "/about", label: "Empresa" },
-              { href: "/proyects", label: "Proyectos" },
-              { href: "/contact", label: "Contacto" },
-              { href: "/social-media", label: "Social Media" },
+              { href: "/projects", label: "Proyectos" },
+              { href: "/team", label: "Equipo" },
+              { href: "/contact", label: "Contacto" }
             ].map((item) => (
               <li key={item.href}>
                 <Link
@@ -147,6 +155,21 @@ const linkColors = `
                 </Link>
               </li>
             ))}
+            <li>
+  <a
+    href="https://www.instagram.com/grupambtubalears/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className={`
+      ${linkColors}
+      text-md md:text-lg lg:text-xl
+      transition-colors
+      hover:text-gray-400 hover:scale-110
+    `}
+  >
+    Instagram
+  </a>
+</li>
           </ul>
         </nav>
       </header>

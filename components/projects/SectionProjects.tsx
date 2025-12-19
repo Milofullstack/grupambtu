@@ -10,7 +10,7 @@ type Props = {
   children: React.ReactNode;
 };
 
-export default function SectionProyects({
+export default function SectionProjects({
   title,
   imageId,
   align = "left",

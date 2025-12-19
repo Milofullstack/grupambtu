@@ -1,7 +1,7 @@
-import SectionSplit from "@/components/proyects/SectionProyects";
+import SectionProjects from "@/components/projects/SectionProjects";
 import EdgeReveal from "@/components/EdgeReveal";
 import Footer from "@/components/Footer";
-import ProyectsIntro from "@/components/proyects/ProyectsIntro";
+import ProyectsIntro from "@/components/projects/ProjectsIntro";
 import Navbar from "@/components/Navbar";
 
 export default function AboutPage() {
@@ -11,7 +11,7 @@ export default function AboutPage() {
     <ProyectsIntro/>
 
       {/* Primera sección */}
-      <SectionSplit title="Grup Ambtu" imageId="edificio7_hv8hlm" align="right">
+      <SectionProjects title="Grup Ambtu" imageId="edificio7_hv8hlm" align="right">
         <EdgeReveal>
         <h2 className="text-4xl lg:text-6xl font-philosopher text-white xl:text-black  mb-6 animate-fade-in-up">
           Viviendas entregadas en Manacor
@@ -33,10 +33,10 @@ export default function AboutPage() {
           residentes es posible hoy, no en teoría.
         </p>
         </EdgeReveal>
-      </SectionSplit>
+      </SectionProjects>
 
       {/* Segunda sección */}
-      <SectionSplit
+      <SectionProjects
         title="Compromiso Social"
         imageId="edificio4_lpiwxj"
         align="left"
@@ -60,10 +60,10 @@ export default function AboutPage() {
             solución de escala para un problema estructural.
           </p>
         </EdgeReveal>
-      </SectionSplit>
+      </SectionProjects>
 
       {/* Tercera sección */}
-      <SectionSplit
+      <SectionProjects
         title="Vivienda Digna"
         imageId="edificio8_io5hdr"
         align="right"
@@ -87,9 +87,9 @@ export default function AboutPage() {
             nadie quede atrás.
           </p>
         </EdgeReveal>
-      </SectionSplit>
+      </SectionProjects>
       {/*cuarta seccion*/}
-      <SectionSplit
+      <SectionProjects
         title="Vivienda Digna"
         imageId="DSC08369_hsdoi9"
         align="left"
@@ -114,7 +114,7 @@ export default function AboutPage() {
             Una declaración de principios en un momento crítico para las islas.
           </p>
         </EdgeReveal>
-      </SectionSplit>
+      </SectionProjects>
       <Footer />
     </>
   );

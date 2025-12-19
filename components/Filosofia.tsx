@@ -6,7 +6,7 @@ import { cloudImage } from "../lib/cloudinary";
 import EdgeReveal from "./EdgeReveal";
 
 export default function Filosofia() {
-  const imageUrl = cloudImage("filosofia2_cora0m");
+  const imageUrl = cloudImage("German");
 
   return (
     <section
@@ -25,7 +25,7 @@ export default function Filosofia() {
         <div className="absolute inset-0 bg-black/30" />
       </div>
 
-      <div className="relative mx-auto px-8 lg:px-0 py-20 lg:py-0 h-full flex flex-col xl:flex-row items-center justify-center gap-10">
+      <div className="relative mx-auto px-8  py-20 lg:py-0 h-full flex flex-col xl:flex-row items-center justify-center gap-10">
         {/* IMAGEN NORMAL (lg+) */}
         <div className="relative hidden xl:block w-full  h-[60vh] lg:h-svh">
           <Image
