@@ -15,7 +15,7 @@ export default function Filosofia() {
           className="object-cover object-left"
         ></Image>
       </div>
-      <div className="absolute inset-0 bg-black/40 -z-10" />
+      <div className="absolute inset-0 bg-black/30 -z-10" />
       <div className="w-full h-full flex items-center justify-start">
         <div className="max-w-5xl w-full mx-auto px-8 md:px-24 flex items-center justify-start">
           <div className="w-full flex flex-col gap-8 md:gap-10 2xl:gap-20 justify-between text-center">

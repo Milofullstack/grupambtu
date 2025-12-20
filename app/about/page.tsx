@@ -29,7 +29,7 @@ export default function AboutPage() {
           </EdgeReveal>
           <EdgeReveal>
           <p className="text-sm md:text-2xl lg:text-3xl pt-10 text-white text-center md:text-left leading-relaxed text-shadow-lg font-garamond text-pretty">
-            Nuestro trabajo se fundamenta en criterios transparentes, evaluación justa y responsabilidad ética. Este compromiso se refleja en hechos: Grup Ambtu ha sido reconocido públicamente con el Premio a la Responsabilidad Social y Ética Empresarial otorgado por PIMEM en 2025, un reconocimiento a su labor en defensa de los residentes y su postura clara:<span className="font-garamond font-semibold text-xl md:text-3xl lg:text-4xl font-sans text-white"> "viviendas para los residentes, hoteles para los turistas”.</span></p>
+            Nuestro trabajo se fundamenta en criterios transparentes, evaluación justa y responsabilidad ética. Este compromiso se refleja en hechos: Grup Ambtu ha sido reconocido públicamente con el Premio a la Responsabilidad Social y Ética Empresarial otorgado por PIMEM en 2025, un reconocimiento a su labor en defensa de los residentes y su postura clara:<span className="font-garamond font-semibold text-xl md:text-3xl lg:text-4xl font-sans text-white">"viviendas para los residentes, hoteles para los turistas”.</span></p>
             </EdgeReveal>
             <EdgeReveal> 
             <p className="text-md md:text-2xl lg:text-3xl pt-10 text-white text-center md:text-left leading-relaxed text-shadow-lg font-garamond text-pretty">

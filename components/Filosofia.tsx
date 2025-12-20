@@ -9,10 +9,7 @@ export default function Filosofia() {
   const imageUrl = cloudImage("German");
 
   return (
-    <section
-      id="filosofia"
-      className="relative w-full h-svh bg-[#f8f6f2]"
-    >
+    <section id="filosofia" className="relative w-full h-svh bg-[#f8f6f2]">
       {/* IMAGEN BACKGROUND (sm → md) */}
       <div className="absolute inset-0 xl:hidden">
         <Image
@@ -57,10 +54,9 @@ export default function Filosofia() {
           </EdgeReveal>
 
           <EdgeReveal>
-            <p className="text-2xl md:text-3xl text-start md:text-left font-garamond font-light leading-relaxed max-w-2xl text-white/90 xl:text-gray-500">
-              Nuestra filosofía nace del deseo de construir con sentido,
-              cuidar el entorno y crear hogares donde las personas vivan con
-              dignidad.
+            <p className="text-2xl md:text-3xl xl:text-2xl text-start md:text-left font-garamond font-light leading-relaxed max-w-2xl text-white/90 xl:text-gray-500">
+              Nuestra filosofía nace del deseo de construir con sentido, cuidar
+              el entorno y crear hogares donde las personas vivan con dignidad.
             </p>
           </EdgeReveal>
 
@@ -68,24 +64,18 @@ export default function Filosofia() {
             <div className="pt-10 flex justify-center xl:justify-center items-center w-full">
               <Link href="/about">
                 <button
-                  className="
-                    group relative isolate overflow-hidden self-center
+                  className="self-center
+                    group relative isolate overflow-hidden
                     inline-flex items-center
-                    rounded-2xl
-                    border border-white xl:border-black
-                    px-6 py-2 md:px-10 md:py-4
+                    rounded-2xl border border-white xl:border-black
+                    px-8 py-3 md:px-12 md:py-4
                     font-philosopher text-xl
                     text-white xl:text-black
                     transition-transform duration-300
                     hover:scale-105 active:scale-95
                   "
                 >
-                  <span
-                    className="
-                      relative z-10 transition-colors duration-500
-                      group-hover:text-black xl:group-hover:text-white
-                    "
-                  >
+                  <span className="relative z-10 transition-colors duration-500 group-hover:text-black xl:group-hover:text-white">
                     Nuestra filosofía
                   </span>
 
@@ -93,9 +83,9 @@ export default function Filosofia() {
                     aria-hidden
                     className="
                       pointer-events-none absolute inset-0 z-0
-                      bg-gray-300 xl:bg-gray-400
-                      origin-left scale-x-0 transform-gpu
-                      transition-transform duration-700 ease-out
+                      bg-gray-300 lg:bg-[#9e7b54]
+                      origin-right scale-x-0 transform-gpu
+                      transition-transform duration-1500 ease-out
                       group-hover:scale-x-100
                     "
                   />

@@ -6,105 +6,127 @@ import Navbar from "@/components/Navbar";
 export default function ContactPage() {
   return (
     <>
-    <Navbar forceDarkAtTop={true} />
-    <main className="w-full min-h-svh bg-[#f8f6f2]">
-      {/* CONTENEDOR */}
-      <section id="/contact" className="max-w-5xl mx-auto px-8 md:px-16 pt-46 flex flex-col gap-16">
-        
-        {/* INTRO */}
-        <header className="flex flex-col gap-6 max-w-2xl">
-          <h1 className="font-philosopher text-4xl text-black md:text-5xl">
-            Contacto
-          </h1>
-
-          <p className="font-garamond text-lg text-black">
-            Cuéntanos tu situación y revisaremos tu caso con atención.
-            Este formulario está pensado para consultas reales relacionadas
-            con vivienda y proyectos de Grup Ambtu.
-          </p>
-        </header>
-
-        {/* FORMULARIO */}
-        <form
-          className="w-full max-w-3xl flex flex-col gap-8"
-          onSubmit={(e) => e.preventDefault()}
+      <Navbar forceDarkAtTop={true} />
+      <main className="w-full min-h-svh bg-[#f8f6f2]">
+        {/* CONTENEDOR */}
+        <section
+          id="/contact"
+          className="max-w-5xl mx-auto px-8 md:px-16 pt-46 flex flex-col gap-16"
         >
-          {/* NOMBRE */}
-          <div className="flex flex-col gap-2">
-            <label className="font-garamond text-lg text-black">
-              Nombre
-            </label>
-            <input
-              type="text"
-              className="border border-gray-300 px-4 py-3 bg-white focus:outline-none focus:border-black"
-              placeholder="Tu nombre"
-              required
-            />
-          </div>
+          {/* INTRO */}
+          <header className="flex flex-col gap-6 max-w-2xl">
+            <h1 className="font-philosopher text-4xl text-black md:text-5xl">
+              Contacto
+            </h1>
 
-          {/* EMAIL */}
-          <div className="flex flex-col gap-2">
-            <label className="font-garamond text-lg text-black">
-              Email
-            </label>
-            <input
-              type="email"
-              className="border border-gray-300 px-4 py-3 bg-white focus:outline-none focus:border-black"
-              placeholder="tu@email.com"
-              required
-            />
-          </div>
+            <p className="font-garamond text-lg text-black">
+              Cuéntanos tu situación y revisaremos tu caso con atención. Este
+              formulario está pensado para consultas reales relacionadas con
+              vivienda y proyectos de Grup Ambtu.
+            </p>
+          </header>
 
-          {/* MENSAJE */}
-          <div className="flex flex-col gap-2">
-            <label className="font-garamond text-lg text-black">
-              Mensaje
-            </label>
-            <textarea
-              rows={6}
-              className="border border-gray-300 px-4 py-3 bg-white focus:outline-none focus:border-black resize-none"
-              placeholder="Explícanos brevemente tu situación"
-              required
-            />
-          </div>
-
-          {/* AVISO */}
-          <p className="font-garamond text-lg text-black max-w-xl">
-            Revisamos personalmente cada mensaje. Si encaja con nuestro
-            enfoque, nos pondremos en contacto contigo en un plazo aproximado
-            de 24–48 horas.
-          </p>
-
-          {/* BOTÓN */}
-          <button
-            type="submit"
-            className="self-center px-8 py-3 rounded-2xl border text-black border-black font-garamond text-lg hover:bg-black hover:text-white transition-colors"
+          {/* FORMULARIO */}
+          <form
+            className="w-full max-w-3xl flex flex-col gap-8"
+            onSubmit={(e) => e.preventDefault()}
           >
-            Enviar mensaje
-          </button>
-        </form>
+            {/* NOMBRE */}
+            <div className="flex flex-col gap-2">
+              <label className="font-garamond text-lg text-black">Nombre</label>
+              <input
+                type="text"
+                className="border border-gray-300 px-4 py-3 bg-white focus:outline-none focus:border-black"
+                placeholder="Tu nombre"
+                required
+              />
+            </div>
 
-        {/* INFO ADICIONAL */}
-        <footer className="flex flex-col gap-4 max-w-xl pt-12 border-t border-gray-300">
-          <p className="font-garamond text-sm text-black">
-            También puedes escribirnos directamente a:
-          </p>
+            {/* EMAIL */}
+            <div className="flex flex-col gap-2">
+              <label className="font-garamond text-lg text-black">Email</label>
+              <input
+                type="email"
+                className="border border-gray-300 px-4 py-3 bg-white focus:outline-none focus:border-black"
+                placeholder="tu@email.com"
+                required
+              />
+            </div>
 
-          <p className="font-garamond text-sm">
-            <span className="font-medium">contacto@grupambtu.com</span>
-          </p>
+            {/* MENSAJE */}
+            <div className="flex flex-col gap-2">
+              <label className="font-garamond text-lg text-black">
+                Mensaje
+              </label>
+              <textarea
+                rows={6}
+                className="border border-gray-300 px-4 py-3 bg-white focus:outline-none focus:border-black resize-none"
+                placeholder="Explícanos brevemente tu situación"
+                required
+              />
+            </div>
 
-          <p className="font-garamond text-sm text-black">
-            Trabajamos principalmente en Mallorca y alrededores.
-          </p>
+            {/* AVISO */}
+            <p className="font-garamond text-lg text-black max-w-xl">
+              Revisamos personalmente cada mensaje. Si encaja con nuestro
+              enfoque, nos pondremos en contacto contigo en un plazo aproximado
+              de 24–48 horas.
+            </p>
+            <div className="flex items-start gap-3 max-w-xl">
+              <input
+                type="checkbox"
+                id="privacy"
+                required
+                className="mt-1 h-4 w-4 accent-black"
+              />
 
-          <p className="font-garamond text-xs text-black pt-4">
-            Al enviar este formulario aceptas nuestra política de privacidad.
-          </p>
-        </footer>
-      </section>
-    </main>
-    <Footer/>
+              <label
+                htmlFor="privacy"
+                className="font-garamond text-sm text-black leading-relaxed"
+              >
+                He leído y acepto la{" "}
+                <a
+                  href="/legal/privacidad"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-black/70"
+                >
+                  política de privacidad
+                </a>
+                .
+              </label>
+            </div>
+
+            {/* BOTÓN */}
+            <button
+              type="submit"
+              className="self-center px-8 py-3 rounded-2xl border text-black border-black font-garamond text-lg hover:bg-black hover:text-white transition-colors"
+            >
+              Enviar mensaje
+            </button>
+          </form>
+
+          {/* INFO ADICIONAL */}
+          <footer className="flex flex-col gap-4 max-w-xl pt-12 border-t border-gray-300">
+            <p className="font-garamond text-sm text-black">
+              También puedes escribirnos directamente a:
+            </p>
+
+            <p className="font-garamond text-sm">
+              <span className="font-medium">contacto@grupambtu.com</span>
+            </p>
+
+            <p className="font-garamond text-sm text-black">
+              Trabajamos principalmente en Mallorca y alrededores.
+            </p>
+
+            <p className="font-garamond text-xs text-black pt-4">
+              Al enviar este formulario aceptas nuestra política de privacidad.
+            </p>
+          </footer>
+        </section>
+      </main>
+      <Footer />
     </>
   );
 }

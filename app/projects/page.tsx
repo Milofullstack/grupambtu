@@ -2,12 +2,12 @@ import SectionProjects from "@/components/projects/SectionProjects";
 import EdgeReveal from "@/components/EdgeReveal";
 import Footer from "@/components/Footer";
 import ProyectsIntro from "@/components/projects/ProjectsIntro";
-import Navbar from "@/components/Navbar";
+import NavbarWrapper from "@/components/NavbarWrapper";
 
 export default function AboutPage() {
   return (
     <>
-    <Navbar forceDarkAtTop={true} />
+    <NavbarWrapper />
     <ProyectsIntro/>
 
       {/* Primera sección */}

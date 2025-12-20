@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Contacto() {
   return (
     <section id="contacto" className="w-full bg-[#f8f6f2]">
-      <div className="max-w-8xl mx-auto px-8 md:px-16 lg:px-32 pt-20 pb-10 flex flex-col gap-16 justify-between items-center">
+      <div className="max-w-5xl mx-auto px-8 md:px-16 lg:px-32 pt-20 pb-10 flex flex-col gap-16 justify-between items-center">
         <h2 className="text-black text-3xl md:text-5xl font-philosopher mb-6">
           ¿Quieres conocernos mejor?
         </h2>
@@ -21,7 +21,7 @@ export default function Contacto() {
             <strong>Dirección:</strong> Avinguda des Torrent nº 21
           </p>
           <p>
-            <strong>Email:</strong>{" "}
+            <strong>Email:</strong>
             <a
               href="mailto:info@grupambtu.com"
               className="underline hover:text-black"

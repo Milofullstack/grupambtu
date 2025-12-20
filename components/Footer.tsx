@@ -35,9 +35,9 @@ export default function Footer() {
         <div className="flex-1 md:flex-1">
           <h3 className="text-xl font-philosopher mb-4">Información legal</h3>
           <ul className="space-y-2 text-sm text-gray-500">
-            <li><Link href="/aviso-legal" className="hover:text-white">Aviso legal</Link></li>
-            <li><Link href="/privacidad" className="hover:text-white">Política de privacidad</Link></li>
-            <li><Link href="/cookies" className="hover:text-white">Política de cookies</Link></li>
+            <li><Link href="/legal/aviso-legal" className="hover:text-white">Aviso legal</Link></li>
+            <li><Link href="/legal/privacidad" className="hover:text-white">Política de privacidad</Link></li>
+            <li><Link href="/legal/cookies" className="hover:text-white">Política de cookies</Link></li>
           </ul>
         </div>
 
@@ -61,8 +61,9 @@ export default function Footer() {
       </div>
 
       {/* Línea final */}
-      <div className="md:py-10 border-t border-gray-700 bg-[#f8f6f2] pt-6 text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} GrupAmbtu. Todos los derechos reservados.
+      <div className="bg-[#f8f6f2]  text-center text-sm text-gray-500">
+        <div className="py-10 border-t border-gray-700">© {new Date().getFullYear()} GrupAmbtu. Todos los derechos reservados.</div>
+        
       </div>
     </footer>
   );

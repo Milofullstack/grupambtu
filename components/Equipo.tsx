@@ -50,13 +50,13 @@ export default function Equipo() {
           "
         >
           <EdgeReveal>
-            <h2 className="text-3xl md:text-5xl font-philosopher font-extralight">
+            <h2 className="text-3xl md:text-5xl xl:text-4xl font-philosopher font-extralight">
               Nuestro equipo
             </h2>
           </EdgeReveal>
 
           <EdgeReveal>
-            <p className="text-2xl md:text-3xl font-garamond font-light leading-relaxed max-w-2xl text-white/90 xl:text-gray-500">
+            <p className="text-2xl md:text-3xl xl:text-2xl font-garamond font-light leading-relaxed max-w-2xl text-white/90 xl:text-gray-500">
               Contamos con un equipo de profesionales creativos que evalúa cada
               proyecto con cuidado para ajustarse a las limitaciones financieras
               y de tiempo, aportando experiencia en desarrollos de pequeña y gran
@@ -87,7 +87,7 @@ export default function Equipo() {
                     aria-hidden
                     className="
                       pointer-events-none absolute inset-0 z-0
-                      bg-gray-300 lg:bg-gray-400
+                      bg-gray-300 lg:bg-[#9e7b54]
                       origin-right scale-x-0 transform-gpu
                       transition-transform duration-1500 ease-out
                       group-hover:scale-x-100

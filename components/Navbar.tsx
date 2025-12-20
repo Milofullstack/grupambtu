@@ -128,7 +128,7 @@ const linkColors = `
             className={`
               absolute md:static top-full left-0 w-full md:w-auto
               flex flex-col md:flex-row items-center
-              gap-10 md:gap-6 lg:gap-10 
+              gap-10 md:gap-6 xl:gap-10 
               font-philosopher
               ${isOpen ? "block bg-[#f8f6f2] py-8" : "hidden md:flex"}
             `}
@@ -146,7 +146,7 @@ const linkColors = `
                   onClick={() => setIsOpen(false)}
                   className={`
                     ${linkColors}
-                    text-md md:text-lg lg:text-xl 
+                    text-md md:text-md lg:text-lg xl:text-xl
                     transition-colors 
                     hover:text-gray-400 hover:scale-110
                   `}
@@ -162,7 +162,7 @@ const linkColors = `
     rel="noopener noreferrer"
     className={`
       ${linkColors}
-      text-md md:text-lg lg:text-xl
+      text-md md:text-md lg:text-lg xl:text-xl
       transition-colors
       hover:text-gray-400 hover:scale-110
     `}
