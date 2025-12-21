@@ -60,9 +60,9 @@ export default function Filosofia() {
                       aria-hidden
                       className="
               pointer-events-none absolute inset-0 z-0
-              bg-gray-300
+              bg-white
               origin-right scale-x-0 transform-gpu
-              transition-transform duration-1000 ease-out
+              transition-transform duration-1500 ease-out
               group-hover:scale-x-100
               "
                     />

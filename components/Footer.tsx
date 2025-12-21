@@ -23,11 +23,11 @@ export default function Footer() {
         <div className="flex-1 md:flex-1">
           <h3 className="text-xl font-philosopher mb-4">Navegación</h3>
           <ul className="space-y-2 text-sm text-gray-500">
-            <li><Link href="/" className="hover:text-white">Inicio</Link></li>
-            <li><Link href="/about" className="hover:text-white">Empresa</Link></li>
-            <li><Link href="/projects" className="hover:text-white">Proyectos</Link></li>
-            <li><Link href="/team" className="hover:text-white">Equipo</Link></li>
-            <li><Link href="/contact" className="hover:text-white">Contacto</Link></li>
+            <li><Link href="/" className="inline-block hover:text-[#9e7b54] hover:scale-110 transition-all duration-300">Inicio</Link></li>
+            <li><Link href="/about" className="inline-block hover:text-[#9e7b54] hover:scale-110 transition-all duration-300">Empresa</Link></li>
+            <li><Link href="/projects" className="inline-block hover:text-[#9e7b54] hover:scale-110 transition-all duration-300">Proyectos</Link></li>
+            <li><Link href="/team" className="inline-block hover:text-[#9e7b54] hover:scale-110 transition-all duration-300">Equipo</Link></li>
+            <li><Link href="/contact" className="inline-block hover:text-[#9e7b54] hover:scale-110 transition-all duration-300">Contacto</Link></li>
           </ul>
         </div>
 
@@ -35,9 +35,9 @@ export default function Footer() {
         <div className="flex-1 md:flex-1">
           <h3 className="text-xl font-philosopher mb-4">Información legal</h3>
           <ul className="space-y-2 text-sm text-gray-500">
-            <li><Link href="/legal/aviso-legal" className="hover:text-white">Aviso legal</Link></li>
-            <li><Link href="/legal/privacidad" className="hover:text-white">Política de privacidad</Link></li>
-            <li><Link href="/legal/cookies" className="hover:text-white">Política de cookies</Link></li>
+            <li><Link href="/legal/aviso-legal" className="inline-block hover:text-[#9e7b54] hover:scale-110 transition-all duration-300">Aviso legal</Link></li>
+            <li><Link href="/legal/privacidad" className="inline-block hover:text-[#9e7b54] hover:scale-110 transition-all duration-300">Política de privacidad</Link></li>
+            <li><Link href="/legal/cookies" className="inline-block hover:text-[#9e7b54] hover:scale-110 transition-all duration-300">Política de cookies</Link></li>
           </ul>
         </div>
 
@@ -45,13 +45,13 @@ export default function Footer() {
         <div className="flex-1 md:flex-1">
           <h3 className="text-xl font-philosopher mb-4">Contacto</h3>
           <p className="text-sm text-gray-500 mb-2">info@grupambtu.com</p>
-          <p className="text-sm text-gray-500 mb-4">Palma de Mallorca, Illes Balears</p>
+          <p className="text-sm text-gray-500 mb-4">Avinguda des Torrent nº 21 ,Manacor,Palma de Mallorca, Illes Balears</p>
           <div className="flex items-center gap-4">
             <a
               href="https://www.instagram.com/grupambtu"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-white text-gray-300 transition-colors text-xl"
+              className="hover:text-[#9e7b54] text-gray-300 transition-colors text-xl"
               aria-label="Instagram"
             >
               {/* <FaInstagram /> */}

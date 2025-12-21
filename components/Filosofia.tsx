@@ -83,7 +83,7 @@ export default function Filosofia() {
                     aria-hidden
                     className="
                       pointer-events-none absolute inset-0 z-0
-                      bg-gray-300 lg:bg-[#9e7b54]
+                      bg-white xl:bg-[#9e7b54]
                       origin-right scale-x-0 transform-gpu
                       transition-transform duration-1500 ease-out
                       group-hover:scale-x-100

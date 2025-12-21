@@ -144,11 +144,11 @@ const linkColors = `
                 <Link
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className={`
+                  className={`inline-block
                     ${linkColors}
                     text-md md:text-md lg:text-lg xl:text-xl
-                    transition-colors 
-                    hover:text-gray-400 hover:scale-110
+                    transition-all duration-300
+                    hover:text-[#9e7b54] hover:scale-110
                   `}
                 >
                   {item.label}
@@ -160,11 +160,11 @@ const linkColors = `
     href="https://www.instagram.com/grupambtubalears/"
     target="_blank"
     rel="noopener noreferrer"
-    className={`
+    className={`inline-block
       ${linkColors}
       text-md md:text-md lg:text-lg xl:text-xl
-      transition-colors
-      hover:text-gray-400 hover:scale-110
+      transition-all duration-300
+      hover:text-[#9e7b54] hover:scale-110
     `}
   >
     Instagram
